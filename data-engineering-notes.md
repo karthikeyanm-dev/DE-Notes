@@ -8,8 +8,8 @@ Explore the original Jupyter notebooks as readable lessons. Notebook code cells 
 
 * [Python Fundamentals](python-fundamentals/)
 * [Pandas and Data Analysis](pandas-and-data-analysis/)
-* [SQL and Data Modeling](sql-and-data-modeling.md)
-* [PySpark](pyspark.md)
-* [Database and Cloud Setup](database-and-cloud-setup.md)
+* [SQL and Data Modeling](sql-and-data-modeling/)
+* [PySpark](pyspark/)
+* [Database and Cloud Setup](database-and-cloud-setup/)
 
 The source repository remains the canonical place for runnable notebooks and datasets.
