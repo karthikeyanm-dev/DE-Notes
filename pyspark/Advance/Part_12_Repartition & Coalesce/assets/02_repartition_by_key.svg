@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<defs>
+ <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3z" fill="#334155"/></marker>
+ <style>
+ .title{font:bold 28px Arial;fill:#0f172a} .head{font:bold 19px Arial;fill:#0f172a}
+ .txt{font:16px Arial;fill:#1e293b} .small{font:14px Arial;fill:#475569}
+ .box{stroke:#334155;stroke-width:2;rx:13} .arrow{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#arrow)}
+ </style>
+</defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="40" y="48" class="title">Repartition by key: records with equal keys share a partition</text>
+
+<rect x="45" y="120" width="300" height="320" fill="#eff6ff" class="box"/><text x="80" y="160" class="head">Input records</text><text x="85" y="220" class="txt">Chennai: 100</text><text x="85" y="265" class="txt">Mumbai: 200</text><text x="85" y="310" class="txt">Chennai: 150</text><text x="85" y="355" class="txt">Delhi: 300</text><text x="85" y="400" class="txt">Mumbai: 100</text>
+<path d="M355 280 L465 280" class="arrow"/>
+<rect x="485" y="150" width="250" height="260" fill="#fef3c7" class="box"/><text x="515" y="195" class="head">Partitioning by city</text><text x="520" y="255" class="txt">hash(city)</text><text x="520" y="300" class="txt">destination ID</text><text x="520" y="355" class="small">Hash partitioner concept</text>
+<path d="M745 280 L835 280" class="arrow"/>
+<rect x="855" y="120" width="310" height="320" fill="#dcfce7" class="box"/><text x="885" y="160" class="head">Target partitions</text><text x="890" y="220" class="txt">P0: Chennai rows</text><text x="890" y="285" class="txt">P1: Mumbai rows</text><text x="890" y="350" class="txt">P2: Delhi rows</text><text x="890" y="405" class="small">Illustrative mapping only</text>
+
+</svg>

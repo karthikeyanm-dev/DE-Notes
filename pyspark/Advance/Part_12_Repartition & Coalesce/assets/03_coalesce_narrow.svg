@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<defs>
+ <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3z" fill="#334155"/></marker>
+ <style>
+ .title{font:bold 28px Arial;fill:#0f172a} .head{font:bold 19px Arial;fill:#0f172a}
+ .txt{font:16px Arial;fill:#1e293b} .small{font:14px Arial;fill:#475569}
+ .box{stroke:#334155;stroke-width:2;rx:13} .arrow{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#arrow)}
+ </style>
+</defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="40" y="48" class="title">Coalesce without shuffle: combine parent partition work</text>
+
+<rect x="40" y="110" width="310" height="360" fill="#eff6ff" class="box"/><text x="75" y="150" class="head">Before: 6 partitions</text>
+<rect x="80" y="180" width="230" height="34" fill="#bfdbfe" class="box"/><text x="100" y="203" class="txt">P0</text><rect x="80" y="223" width="230" height="34" fill="#bfdbfe" class="box"/><text x="100" y="246" class="txt">P1</text><rect x="80" y="266" width="230" height="34" fill="#bfdbfe" class="box"/><text x="100" y="289" class="txt">P2</text><rect x="80" y="309" width="230" height="34" fill="#bfdbfe" class="box"/><text x="100" y="332" class="txt">P3</text><rect x="80" y="352" width="230" height="34" fill="#bfdbfe" class="box"/><text x="100" y="375" class="txt">P4</text><rect x="80" y="395" width="230" height="34" fill="#bfdbfe" class="box"/><text x="100" y="418" class="txt">P5</text>
+<path d="M360 285 L480 285" class="arrow"/>
+<rect x="500" y="160" width="250" height="250" fill="#fef3c7" class="box"/><text x="530" y="205" class="head">Coalesce(2)</text><text x="530" y="260" class="txt">Group partition work</text><text x="530" y="305" class="txt">No full redistribution</text><text x="530" y="355" class="small">Narrow dependency</text>
+<path d="M760 285 L850 285" class="arrow"/>
+<rect x="870" y="110" width="285" height="360" fill="#dcfce7" class="box"/><text x="900" y="150" class="head">After: 2 partitions</text><rect x="910" y="210" width="205" height="80" fill="#bbf7d0" class="box"/><text x="935" y="245" class="txt">P0 ← some parents</text><rect x="910" y="320" width="205" height="80" fill="#bbf7d0" class="box"/><text x="935" y="355" class="txt">P1 ← remaining</text>
+
+</svg>

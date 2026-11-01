@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<defs>
+ <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3z" fill="#334155"/></marker>
+ <style>
+ .title{font:bold 28px Arial;fill:#0f172a} .head{font:bold 19px Arial;fill:#0f172a}
+ .txt{font:16px Arial;fill:#1e293b} .small{font:14px Arial;fill:#475569}
+ .box{stroke:#334155;stroke-width:2;rx:13} .arrow{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#arrow)}
+ </style>
+</defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="40" y="48" class="title">repartition versus coalesce: conceptual comparison</text>
+
+<rect x="40" y="105" width="530" height="390" fill="#eff6ff" class="box"/><text x="75" y="150" class="head">repartition(n)</text><text x="80" y="215" class="txt">• Redistributes records</text><text x="80" y="260" class="txt">• Usually causes shuffle</text><text x="80" y="305" class="txt">• Can increase or decrease</text><text x="80" y="350" class="txt">• Useful to rebalance / partition by key</text><text x="80" y="430" class="small">RDD and DataFrame APIs</text>
+<rect x="630" y="105" width="530" height="390" fill="#dcfce7" class="box"/><text x="665" y="150" class="head">coalesce(n), shuffle=False</text><text x="670" y="215" class="txt">• Combines existing partition work</text><text x="670" y="260" class="txt">• Avoids full shuffle</text><text x="670" y="305" class="txt">• Normally reduces partition count</text><text x="670" y="350" class="txt">• Can create uneven partition sizes</text><text x="670" y="430" class="small">DataFrame API and RDD API</text>
+
+</svg>

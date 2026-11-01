@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<defs>
+ <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3z" fill="#334155"/></marker>
+ <style>
+ .title{font:bold 28px Arial;fill:#0f172a} .head{font:bold 19px Arial;fill:#0f172a}
+ .txt{font:16px Arial;fill:#1e293b} .small{font:14px Arial;fill:#475569}
+ .box{stroke:#334155;stroke-width:2;rx:13} .arrow{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#arrow)}
+ </style>
+</defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="40" y="48" class="title">RDD coalesce(shuffle=True): reduce partitions with redistribution</text>
+
+<rect x="40" y="120" width="270" height="320" fill="#eff6ff" class="box"/><text x="70" y="160" class="head">Input: 6 partitions</text><text x="80" y="225" class="txt">P0 · P1 · P2</text><text x="80" y="285" class="txt">P3 · P4 · P5</text><text x="80" y="370" class="small">Uneven partition sizes</text>
+<path d="M320 280 L420 280" class="arrow"/>
+<rect x="440" y="150" width="310" height="260" fill="#fef3c7" class="box"/><text x="470" y="195" class="head">Shuffle redistribution</text><text x="475" y="250" class="txt">Redistribute records</text><text x="475" y="295" class="txt">to 2 target partitions</text><text x="475" y="355" class="small">RDD API option</text>
+<path d="M760 280 L850 280" class="arrow"/>
+<rect x="870" y="120" width="285" height="320" fill="#dcfce7" class="box"/><text x="900" y="160" class="head">Output: 2 partitions</text><rect x="910" y="220" width="205" height="65" fill="#bbf7d0" class="box"/><text x="940" y="260" class="txt">P0</text><rect x="910" y="320" width="205" height="65" fill="#bbf7d0" class="box"/><text x="940" y="360" class="txt">P1</text>
+
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<defs>
+ <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3z" fill="#334155"/></marker>
+ <style>
+ .title{font:bold 28px Arial;fill:#0f172a} .head{font:bold 19px Arial;fill:#0f172a}
+ .txt{font:16px Arial;fill:#1e293b} .small{font:14px Arial;fill:#475569}
+ .box{stroke:#334155;stroke-width:2;rx:13} .arrow{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#arrow)}
+ </style>
+</defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="40" y="48" class="title">Increasing versus decreasing partition counts</text>
+
+<rect x="40" y="110" width="520" height="360" fill="#eff6ff" class="box"/><text x="75" y="155" class="head">Increasing: repartition(4 → 8)</text><rect x="85" y="220" width="150" height="75" fill="#bfdbfe" class="box"/><text x="120" y="265" class="txt">4 input</text><path d="M245 258 L320 258" class="arrow"/><rect x="340" y="195" width="180" height="140" fill="#bbf7d0" class="box"/><text x="375" y="240" class="txt">8 output</text><text x="375" y="280" class="small">More parallel tasks</text>
+<rect x="640" y="110" width="520" height="360" fill="#fff1f2" class="box"/><text x="675" y="155" class="head">Decreasing: choose method</text><rect x="690" y="220" width="150" height="75" fill="#fecaca" class="box"/><text x="725" y="265" class="txt">8 input</text><path d="M850 258 L920 258" class="arrow"/><rect x="940" y="195" width="180" height="140" fill="#fef3c7" class="box"/><text x="970" y="240" class="txt">2 output</text><text x="970" y="280" class="small">repartition or coalesce</text>
+
+</svg>

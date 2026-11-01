@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<defs>
+ <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3z" fill="#334155"/></marker>
+ <style>
+ .title{font:bold 28px Arial;fill:#0f172a} .head{font:bold 19px Arial;fill:#0f172a}
+ .txt{font:16px Arial;fill:#1e293b} .small{font:14px Arial;fill:#475569}
+ .box{stroke:#334155;stroke-width:2;rx:13} .arrow{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#arrow)}
+ </style>
+</defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="40" y="48" class="title">Repartition: redistribute records into a new partition layout</text>
+
+<rect x="35" y="115" width="290" height="330" fill="#eff6ff" class="box"/><text x="70" y="155" class="head">Before: 3 partitions</text>
+<rect x="75" y="190" width="210" height="55" fill="#bfdbfe" class="box"/><text x="100" y="225" class="txt">P0: A, B, C</text>
+<rect x="75" y="265" width="210" height="55" fill="#bfdbfe" class="box"/><text x="100" y="300" class="txt">P1: D, E, F</text>
+<rect x="75" y="340" width="210" height="55" fill="#bfdbfe" class="box"/><text x="100" y="375" class="txt">P2: G, H, I</text>
+<path d="M335 280 L440 280" class="arrow"/>
+<rect x="460" y="160" width="270" height="240" fill="#fef3c7" class="box"/><text x="495" y="205" class="head">Shuffle exchange</text><text x="495" y="260" class="txt">Redistribute records</text><text x="495" y="305" class="txt">Across target partitions</text><text x="495" y="355" class="small">Network / local transfer</text>
+<path d="M740 280 L835 280" class="arrow"/>
+<rect x="855" y="115" width="310" height="330" fill="#dcfce7" class="box"/><text x="885" y="155" class="head">After: 5 partitions</text>
+<rect x="890" y="185" width="235" height="42" fill="#bbf7d0" class="box"/><text x="910" y="213" class="txt">P0</text>
+<rect x="890" y="237" width="235" height="42" fill="#bbf7d0" class="box"/><text x="910" y="265" class="txt">P1</text>
+<rect x="890" y="289" width="235" height="42" fill="#bbf7d0" class="box"/><text x="910" y="317" class="txt">P2</text>
+<rect x="890" y="341" width="235" height="42" fill="#bbf7d0" class="box"/><text x="910" y="369" class="txt">P3, P4</text>
+
+</svg>
