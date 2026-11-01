@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430">
+<defs><style>.title{font:bold 25px Arial;fill:#172033}.txt{font:18px Arial;fill:#334155}.file{fill:#e0f2fe;stroke:#0284c7;stroke-width:2}.split{fill:#fef3c7;stroke:#d97706;stroke-width:2}</style></defs>
+<rect width="1000" height="430" fill="white"/>
+<text x="500" y="45" text-anchor="middle" class="title">Illustrative file input splits</text>
+<rect x="100" y="85" width="800" height="70" rx="10" class="file"/>
+<text x="500" y="128" text-anchor="middle" class="txt">Large input file (for example, 512 MB)</text>
+<path d="M500 155 V195 M200 195 H800 M200 195 V225 M400 195 V225 M600 195 V225 M800 195 V225" stroke="#64748b" stroke-width="2" fill="none"/>
+<rect x="120" y="225" width="160" height="95" rx="9" class="split"/><text x="200" y="263" text-anchor="middle" class="txt">Input split 1</text><text x="200" y="293" text-anchor="middle" class="txt">~128 MB</text><rect x="320" y="225" width="160" height="95" rx="9" class="split"/><text x="400" y="263" text-anchor="middle" class="txt">Input split 2</text><text x="400" y="293" text-anchor="middle" class="txt">~128 MB</text><rect x="520" y="225" width="160" height="95" rx="9" class="split"/><text x="600" y="263" text-anchor="middle" class="txt">Input split 3</text><text x="600" y="293" text-anchor="middle" class="txt">~128 MB</text><rect x="720" y="225" width="160" height="95" rx="9" class="split"/><text x="800" y="263" text-anchor="middle" class="txt">Input split 4</text><text x="800" y="293" text-anchor="middle" class="txt">~128 MB</text><text x="500" y="370" text-anchor="middle" class="txt">Illustration only: real split sizes depend on file system, format and configuration.</text></svg>
