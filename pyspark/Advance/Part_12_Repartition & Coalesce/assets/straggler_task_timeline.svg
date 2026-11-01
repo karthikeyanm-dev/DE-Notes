@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500">
+<style>.title{font:bold 25px Arial;fill:#172033}.lab{font:18px Arial;fill:#334155}.small{font:14px Arial;fill:#64748b}.fast{fill:#16a34a}.slow{fill:#d97706}</style>
+<rect width="1000" height="500" fill="white"/><text x="500" y="45" text-anchor="middle" class="title">Illustrative task timeline with a straggler</text>
+<text x="75" y="125" class="lab">Task 0</text><rect x="190" y="100" width="150" height="34" rx="6" class="fast"/><text x="355" y="124" class="small">Finishes early</text>
+<text x="75" y="205" class="lab">Task 1</text><rect x="190" y="180" width="165" height="34" rx="6" class="fast"/><text x="370" y="204" class="small">Finishes early</text>
+<text x="75" y="285" class="lab">Task 2</text><rect x="190" y="260" width="145" height="34" rx="6" class="fast"/><text x="350" y="284" class="small">Finishes early</text>
+<text x="75" y="365" class="lab">Task 3</text><rect x="190" y="340" width="650" height="34" rx="6" class="slow"/><text x="855" y="364" class="small">Slow task</text>
+<text x="500" y="445" text-anchor="middle" class="lab">The stage waits for all required tasks, including the slowest one.</text></svg>
