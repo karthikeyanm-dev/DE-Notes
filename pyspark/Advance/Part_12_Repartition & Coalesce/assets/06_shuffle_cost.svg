@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#334155"/></marker>
+  <style>
+    .title{font: bold 28px Arial; fill:#0f172a} .h{font:bold 19px Arial;fill:#0f172a}
+    .t{font:16px Arial;fill:#1e293b} .s{font:14px Arial;fill:#475569}
+    .b{stroke:#334155;stroke-width:2;rx:14} .a{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#arrow)}
+  </style>
+</defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="48" class="title">Why shuffle can be expensive</text>
+<rect x="420" y="185" width="360" height="170" fill="#fef3c7" class="b"/><text x="530" y="235" class="h">SHUFFLE</text><text x="485" y="280" class="t">Redistribute intermediate data</text>
+<rect x="45" y="100" width="280" height="125" fill="#dbeafe" class="b"/><text x="75" y="145" class="h">Network I/O</text><text x="75" y="185" class="t">Remote block transfer</text><path d="M330 165 L420 220" class="a"/>
+<rect x="45" y="375" width="280" height="125" fill="#dcfce7" class="b"/><text x="75" y="420" class="h">Disk I/O</text><text x="75" y="460" class="t">Write, read, spill, merge</text><path d="M330 435 L420 320" class="a"/>
+<rect x="875" y="100" width="280" height="125" fill="#fce7f3" class="b"/><text x="905" y="145" class="h">CPU overhead</text><text x="905" y="185" class="t">Serialize, sort, hash</text><path d="M875 165 L780 220" class="a"/>
+<rect x="875" y="375" width="280" height="125" fill="#fee2e2" class="b"/><text x="905" y="420" class="h">Memory pressure</text><text x="905" y="460" class="t">Buffers and spill risk</text><path d="M875 435 L780 320" class="a"/>
+</svg>

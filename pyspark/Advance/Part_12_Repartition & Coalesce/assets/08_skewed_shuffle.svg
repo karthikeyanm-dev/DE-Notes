@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#334155"/></marker>
+  <style>
+    .title{font: bold 28px Arial; fill:#0f172a} .h{font:bold 19px Arial;fill:#0f172a}
+    .t{font:16px Arial;fill:#1e293b} .s{font:14px Arial;fill:#475569}
+    .b{stroke:#334155;stroke-width:2;rx:14} .a{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#arrow)}
+  </style>
+</defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="48" class="title">Balanced versus skewed shuffle partitions</text>
+<rect x="45" y="100" width="500" height="390" fill="#eff6ff" class="b"/><text x="75" y="145" class="h">Balanced shuffle output</text>
+<rect x="90" y="205" width="75" height="180" fill="#93c5fd" class="b"/><rect x="190" y="205" width="75" height="180" fill="#93c5fd" class="b"/><rect x="290" y="205" width="75" height="180" fill="#93c5fd" class="b"/><rect x="390" y="205" width="75" height="180" fill="#93c5fd" class="b"/>
+<text x="105" y="415" class="t">P0</text><text x="205" y="415" class="t">P1</text><text x="305" y="415" class="t">P2</text><text x="405" y="415" class="t">P3</text>
+<rect x="655" y="100" width="500" height="390" fill="#fff1f2" class="b"/><text x="685" y="145" class="h">Skewed shuffle output</text>
+<rect x="700" y="325" width="75" height="60" fill="#fca5a5" class="b"/><rect x="800" y="305" width="75" height="80" fill="#fca5a5" class="b"/><rect x="900" y="185" width="75" height="200" fill="#fca5a5" class="b"/><rect x="1000" y="345" width="75" height="40" fill="#fca5a5" class="b"/>
+<text x="715" y="415" class="t">P0</text><text x="815" y="415" class="t">P1</text><text x="915" y="415" class="t">P2</text><text x="1015" y="415" class="t">P3</text>
+<text x="690" y="455" class="s">One large partition becomes a straggler task</text>
+</svg>

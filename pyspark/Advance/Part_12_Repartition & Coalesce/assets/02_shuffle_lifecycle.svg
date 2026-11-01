@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#334155"/></marker>
+  <style>
+    .title{font: bold 28px Arial; fill:#0f172a} .h{font:bold 19px Arial;fill:#0f172a}
+    .t{font:16px Arial;fill:#1e293b} .s{font:14px Arial;fill:#475569}
+    .b{stroke:#334155;stroke-width:2;rx:14} .a{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#arrow)}
+  </style>
+</defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="48" class="title">Shuffle lifecycle: from map tasks to reduce tasks</text>
+<rect x="35" y="145" width="205" height="235" fill="#dbeafe" class="b"/><text x="60" y="185" class="h">Stage N</text><text x="60" y="225" class="t">Input partitions</text><text x="60" y="260" class="t">Map tasks</text><text x="60" y="295" class="t">Key / partition ID</text><text x="60" y="330" class="t">Local combine*</text>
+<path d="M250 260 L330 260" class="a"/>
+<rect x="350" y="145" width="210" height="235" fill="#fef3c7" class="b"/><text x="375" y="185" class="h">Shuffle write</text><text x="375" y="230" class="t">Serialize records</text><text x="375" y="265" class="t">Buffer / sort</text><text x="375" y="300" class="t">Spill if needed</text><text x="375" y="335" class="t">Write shuffle data</text>
+<path d="M570 260 L650 260" class="a"/>
+<rect x="670" y="145" width="210" height="235" fill="#fce7f3" class="b"/><text x="695" y="185" class="h">Shuffle service</text><text x="695" y="230" class="t">Block locations</text><text x="695" y="265" class="t">Local / remote fetch</text><text x="695" y="300" class="t">Network transfer</text><text x="695" y="335" class="t">Intermediate data</text>
+<path d="M890 260 L970 260" class="a"/>
+<rect x="990" y="145" width="180" height="235" fill="#dcfce7" class="b"/><text x="1015" y="185" class="h">Stage N+1</text><text x="1015" y="230" class="t">Shuffle read</text><text x="1015" y="265" class="t">Merge / aggregate</text><text x="1015" y="300" class="t">Join / sort</text><text x="1015" y="335" class="t">Output</text>
+<text x="40" y="445" class="s">* Local aggregation is possible for suitable operations such as reduceByKey / partial SQL aggregation; it is not universal.</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<defs>
+ <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3z" fill="#334155"/></marker>
+ <style>
+ .title{font:bold 28px Arial;fill:#0f172a} .head{font:bold 19px Arial;fill:#0f172a}
+ .txt{font:16px Arial;fill:#1e293b} .small{font:14px Arial;fill:#475569}
+ .box{stroke:#334155;stroke-width:2;rx:13} .arrow{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#arr)}
+ </style>
+</defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="40" y="48" class="title">How shuffle boundaries divide Spark stages</text>
+
+<rect x="40" y="120" width="310" height="300" fill="#eff6ff" class="box"/><text x="75" y="165" class="head">Stage 0</text><text x="75" y="215" class="txt">Read input partitions</text><text x="75" y="255" class="txt">map()</text><text x="75" y="295" class="txt">filter()</text><text x="75" y="335" class="txt">flatMap()</text><text x="75" y="385" class="small">Narrow chain</text>
+<path d="M365 270 L465 270" class="arrow"/><rect x="485" y="120" width="230" height="300" fill="#fef3c7" class="box"/><text x="520" y="165" class="head">Shuffle</text><text x="520" y="220" class="txt">Exchange data</text><text x="520" y="265" class="txt">Write blocks</text><text x="520" y="310" class="txt">Fetch blocks</text><text x="520" y="385" class="small">Stage boundary</text>
+<path d="M730 270 L820 270" class="arrow"/><rect x="840" y="120" width="310" height="300" fill="#dcfce7" class="box"/><text x="875" y="165" class="head">Stage 1</text><text x="875" y="215" class="txt">reduceByKey()</text><text x="875" y="255" class="txt">aggregate()</text><text x="875" y="295" class="txt">write output</text><text x="875" y="385" class="small">Downstream tasks</text>
+
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#334155"/></marker>
+  <style>
+    .title{font: bold 28px Arial; fill:#0f172a} .h{font:bold 19px Arial;fill:#0f172a}
+    .t{font:16px Arial;fill:#1e293b} .s{font:14px Arial;fill:#475569}
+    .b{stroke:#334155;stroke-width:2;rx:14} .a{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#arrow)}
+  </style>
+</defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="48" class="title">Conceptual shuffle file layout (sort-based shuffle)</text>
+<rect x="45" y="115" width="330" height="340" fill="#eff6ff" class="b"/><text x="70" y="155" class="h">Map task on Executor A</text><rect x="80" y="195" width="260" height="70" fill="#bfdbfe" class="b"/><text x="105" y="237" class="t">shuffle_7_0_0.data</text><rect x="80" y="285" width="260" height="70" fill="#bfdbfe" class="b"/><text x="105" y="327" class="t">shuffle_7_0_0.index</text><text x="75" y="405" class="s">Data segments + offsets</text>
+<path d="M390 280 L500 280" class="a"/>
+<rect x="520" y="115" width="285" height="340" fill="#fef3c7" class="b"/><text x="545" y="155" class="h">Index concept</text><text x="550" y="220" class="t">P0: bytes 0–120</text><text x="550" y="270" class="t">P1: bytes 120–260</text><text x="550" y="320" class="t">P2: bytes 260–400</text><text x="550" y="405" class="s">Illustrative offsets only</text>
+<path d="M820 280 L900 280" class="a"/>
+<rect x="920" y="115" width="240" height="340" fill="#dcfce7" class="b"/><text x="945" y="155" class="h">Reducer fetch</text><text x="945" y="220" class="t">P0 reads its slice</text><text x="945" y="270" class="t">P1 reads its slice</text><text x="945" y="320" class="t">P2 reads its slice</text><text x="945" y="405" class="s">Local or remote blocks</text>
+</svg>

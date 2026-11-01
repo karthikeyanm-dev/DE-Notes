@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<defs>
+ <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3z" fill="#334155"/></marker>
+ <style>
+ .title{font:bold 28px Arial;fill:#0f172a} .head{font:bold 19px Arial;fill:#0f172a}
+ .txt{font:16px Arial;fill:#1e293b} .small{font:14px Arial;fill:#475569}
+ .box{stroke:#334155;stroke-width:2;rx:13} .arrow{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#arr)}
+ </style>
+</defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="40" y="48" class="title">Narrow versus wide transformation comparison</text>
+
+<rect x="45" y="110" width="520" height="370" fill="#eff6ff" class="box"/><text x="80" y="155" class="head">NARROW</text><text x="80" y="205" class="txt">• Partition-local dependency</text><text x="80" y="250" class="txt">• No redistribution between partitions</text><text x="80" y="295" class="txt">• Usually no shuffle boundary</text><text x="80" y="340" class="txt">• Can remain in the same stage</text><text x="80" y="410" class="small">Examples: map, filter, flatMap</text>
+<rect x="635" y="110" width="520" height="370" fill="#fff1f2" class="box"/><text x="670" y="155" class="head">WIDE</text><text x="670" y="205" class="txt">• Child partitions depend on multiple parents</text><text x="670" y="250" class="txt">• Data redistribution is required</text><text x="670" y="295" class="txt">• Usually involves shuffle</text><text x="670" y="340" class="txt">• Commonly creates a stage boundary</text><text x="670" y="410" class="small">Examples: reduceByKey, groupByKey, repartition</text>
+
+</svg>

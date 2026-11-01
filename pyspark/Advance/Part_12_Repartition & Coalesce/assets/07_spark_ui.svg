@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#334155"/></marker>
+  <style>
+    .title{font: bold 28px Arial; fill:#0f172a} .h{font:bold 19px Arial;fill:#0f172a}
+    .t{font:16px Arial;fill:#1e293b} .s{font:14px Arial;fill:#475569}
+    .b{stroke:#334155;stroke-width:2;rx:14} .a{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#arrow)}
+  </style>
+</defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="48" class="title">Where to inspect shuffle in Spark UI</text>
+<rect x="45" y="95" width="310" height="390" fill="#eff6ff" class="b"/><text x="75" y="140" class="h">SQL / DataFrame plan</text><text x="75" y="195" class="t">df.explain("formatted")</text><rect x="75" y="225" width="245" height="65" fill="#bfdbfe" class="b"/><text x="100" y="265" class="t">Exchange</text><text x="75" y="335" class="s">Look for hashpartitioning</text><text x="75" y="375" class="s">and sort / aggregate nodes</text>
+<path d="M365 285 L440 285" class="a"/>
+<rect x="460" y="95" width="310" height="390" fill="#fef3c7" class="b"/><text x="490" y="140" class="h">Stages tab</text><text x="490" y="195" class="t">Shuffle Read</text><text x="490" y="235" class="t">Shuffle Write</text><text x="490" y="275" class="t">Spill (Memory / Disk)</text><text x="490" y="315" class="t">Task duration distribution</text><text x="490" y="375" class="s">Compare median, max and bytes</text>
+<path d="M780 285 L855 285" class="a"/>
+<rect x="875" y="95" width="280" height="390" fill="#dcfce7" class="b"/><text x="905" y="140" class="h">Executors tab</text><text x="905" y="195" class="t">Shuffle totals per executor</text><text x="905" y="245" class="t">Failed tasks</text><text x="905" y="295" class="t">Storage / GC context</text><text x="905" y="375" class="s">Use task details for outliers</text>
+</svg>

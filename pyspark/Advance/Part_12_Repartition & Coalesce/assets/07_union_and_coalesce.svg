@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<defs>
+ <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3z" fill="#334155"/></marker>
+ <style>
+ .title{font:bold 28px Arial;fill:#0f172a} .head{font:bold 19px Arial;fill:#0f172a}
+ .txt{font:16px Arial;fill:#1e293b} .small{font:14px Arial;fill:#475569}
+ .box{stroke:#334155;stroke-width:2;rx:13} .arrow{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#arr)}
+ </style>
+</defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="40" y="48" class="title">Not every many-to-one dependency is a shuffle</text>
+
+<rect x="45" y="115" width="260" height="330" fill="#eff6ff" class="box"/><text x="75" y="155" class="head">Parent partitions</text><text x="85" y="225" class="txt">P0</text><text x="85" y="295" class="txt">P1</text><text x="85" y="365" class="txt">P2</text><text x="85" y="425" class="small">Several input partitions</text>
+<path d="M130 230 L440 230 M130 300 L440 300 M130 370 L440 370" class="arrow"/>
+<rect x="460" y="175" width="280" height="220" fill="#fef3c7" class="box"/><text x="505" y="220" class="head">coalesce(2)</text><text x="505" y="270" class="txt">Combine partition work</text><text x="505" y="315" class="txt">without full shuffle</text>
+<path d="M750 230 L865 230 M750 340 L865 340" class="arrow"/>
+<rect x="885" y="115" width="270" height="330" fill="#dcfce7" class="box"/><text x="920" y="155" class="head">Fewer partitions</text><text x="945" y="245" class="txt">Child P0</text><text x="945" y="355" class="txt">Child P1</text><text x="920" y="425" class="small">Can be uneven in size</text>
+
+</svg>

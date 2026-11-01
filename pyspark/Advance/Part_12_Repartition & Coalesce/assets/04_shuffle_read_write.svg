@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#334155"/></marker>
+  <style>
+    .title{font: bold 28px Arial; fill:#0f172a} .h{font:bold 19px Arial;fill:#0f172a}
+    .t{font:16px Arial;fill:#1e293b} .s{font:14px Arial;fill:#475569}
+    .b{stroke:#334155;stroke-width:2;rx:14} .a{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#arrow)}
+  </style>
+</defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="48" class="title">Shuffle write and shuffle read</text>
+<rect x="50" y="120" width="450" height="330" fill="#dbeafe" class="b"/><text x="80" y="165" class="h">Upstream map tasks</text><text x="80" y="215" class="t">Task 0 writes blocks for P0, P1, P2</text><text x="80" y="265" class="t">Task 1 writes blocks for P0, P1, P2</text><text x="80" y="315" class="t">Task 2 writes blocks for P0, P1, P2</text><text x="80" y="390" class="s">SHUFFLE WRITE: bytes produced</text>
+<path d="M510 285 L675 285" class="a"/>
+<rect x="695" y="120" width="455" height="330" fill="#dcfce7" class="b"/><text x="725" y="165" class="h">Downstream reduce tasks</text><text x="725" y="215" class="t">Reducer P0 fetches P0 blocks from all maps</text><text x="725" y="265" class="t">Reducer P1 fetches P1 blocks from all maps</text><text x="725" y="315" class="t">Reducer P2 fetches P2 blocks from all maps</text><text x="725" y="390" class="s">SHUFFLE READ: bytes fetched / consumed</text>
+</svg>

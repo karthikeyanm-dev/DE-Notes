@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<defs>
+ <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3z" fill="#334155"/></marker>
+ <style>
+ .title{font:bold 28px Arial;fill:#0f172a} .head{font:bold 19px Arial;fill:#0f172a}
+ .txt{font:16px Arial;fill:#1e293b} .small{font:14px Arial;fill:#475569}
+ .box{stroke:#334155;stroke-width:2;rx:13} .arrow{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#arr)}
+ </style>
+</defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="40" y="48" class="title">DataFrame physical plan: Exchange marks redistribution</text>
+
+<rect x="340" y="95" width="520" height="80" fill="#dcfce7" class="box"/><text x="390" y="145" class="head">Final HashAggregate (city)</text>
+<path d="M600 180 L600 230" class="arrow"/>
+<rect x="340" y="245" width="520" height="85" fill="#fef3c7" class="box"/><text x="390" y="295" class="head">Exchange hashpartitioning(city, N)</text>
+<path d="M600 335 L600 385" class="arrow"/>
+<rect x="340" y="400" width="520" height="85" fill="#dbeafe" class="box"/><text x="390" y="450" class="head">Partial HashAggregate / Scan</text>
+<text x="55" y="270" class="small">Physical plan sketch</text><text x="55" y="300" class="small">not a guaranteed</text><text x="55" y="330" class="small">operator sequence.</text>
+
+</svg>
