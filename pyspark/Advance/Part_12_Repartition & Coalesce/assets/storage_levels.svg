@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="420" viewBox="0 0 1100 420">
+<defs><style>.head{font:bold 27px Arial;fill:#0f172a}.t{font:bold 19px Arial;fill:#0f172a}.s{font:15px Arial;fill:#334155}.b{stroke:#334155;stroke-width:2;rx:15;ry:15}</style></defs>
+<rect width="100%" height="100%" fill="white"/>
+<text x="40" y="48" class="head">Conceptual storage-level choices</text>
+<rect x="40.0" y="145" width="238.5" height="125" class="b" fill="#e0f2fe"/>
+<text x="159.2" y="195" text-anchor="middle" class="t">MEMORY_ONLY</text>
+<text x="159.2" y="230" text-anchor="middle" class="s">fast if it fits</text>
+<path d="M282.5 207 H295.5" stroke="#475569" stroke-width="3"/>
+<path d="M286.5 199 L295.5 207 L286.5 215" fill="none" stroke="#475569" stroke-width="3"/>
+<rect x="300.5" y="145" width="238.5" height="125" class="b" fill="#fef3c7"/>
+<text x="419.8" y="195" text-anchor="middle" class="t">MEMORY_AND_DISK</text>
+<text x="419.8" y="230" text-anchor="middle" class="s">disk fallback</text>
+<path d="M543.0 207 H556.0" stroke="#475569" stroke-width="3"/>
+<path d="M547.0 199 L556.0 207 L547.0 215" fill="none" stroke="#475569" stroke-width="3"/>
+<rect x="561.0" y="145" width="238.5" height="125" class="b" fill="#dcfce7"/>
+<text x="680.2" y="195" text-anchor="middle" class="t">DISK_ONLY</text>
+<text x="680.2" y="230" text-anchor="middle" class="s">lower memory use</text>
+<path d="M803.5 207 H816.5" stroke="#475569" stroke-width="3"/>
+<path d="M807.5 199 L816.5 207 L807.5 215" fill="none" stroke="#475569" stroke-width="3"/>
+<rect x="821.5" y="145" width="238.5" height="125" class="b" fill="#ede9fe"/>
+<text x="940.8" y="195" text-anchor="middle" class="t">Serialized</text>
+<text x="940.8" y="230" text-anchor="middle" class="s">less object overhead; CPU cost</text>
+<text x="550" y="345" text-anchor="middle" class="s">Conceptual diagram — actual execution and storage behavior depends on Spark version and configuration.</text></svg>

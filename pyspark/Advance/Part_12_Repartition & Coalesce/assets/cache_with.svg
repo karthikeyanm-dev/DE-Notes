@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="420" viewBox="0 0 1100 420">
+<defs><style>.head{font:bold 27px Arial;fill:#0f172a}.t{font:bold 19px Arial;fill:#0f172a}.s{font:15px Arial;fill:#334155}.b{stroke:#334155;stroke-width:2;rx:15;ry:15}</style></defs>
+<rect width="100%" height="100%" fill="white"/>
+<text x="40" y="48" class="head">Cache and reuse across actions</text>
+<rect x="40.0" y="145" width="186.4" height="125" class="b" fill="#e0f2fe"/>
+<text x="133.2" y="195" text-anchor="middle" class="t">Source data</text>
+<text x="133.2" y="230" text-anchor="middle" class="s">CSV / Parquet</text>
+<path d="M230.4 207 H243.4" stroke="#475569" stroke-width="3"/>
+<path d="M234.4 199 L243.4 207 L234.4 215" fill="none" stroke="#475569" stroke-width="3"/>
+<rect x="248.4" y="145" width="186.4" height="125" class="b" fill="#fef3c7"/>
+<text x="341.6" y="195" text-anchor="middle" class="t">Expensive ETL</text>
+<text x="341.6" y="230" text-anchor="middle" class="s">filter + join + clean</text>
+<path d="M438.8 207 H451.8" stroke="#475569" stroke-width="3"/>
+<path d="M442.8 199 L451.8 207 L442.8 215" fill="none" stroke="#475569" stroke-width="3"/>
+<rect x="456.8" y="145" width="186.4" height="125" class="b" fill="#dcfce7"/>
+<text x="550.0" y="195" text-anchor="middle" class="t">Cached dataset</text>
+<text x="550.0" y="230" text-anchor="middle" class="s">memory / disk blocks</text>
+<path d="M647.2 207 H660.2" stroke="#475569" stroke-width="3"/>
+<path d="M651.2 199 L660.2 207 L651.2 215" fill="none" stroke="#475569" stroke-width="3"/>
+<rect x="665.2" y="145" width="186.4" height="125" class="b" fill="#ede9fe"/>
+<text x="758.4" y="195" text-anchor="middle" class="t">Action 1</text>
+<text x="758.4" y="230" text-anchor="middle" class="s">city report</text>
+<path d="M855.6 207 H868.6" stroke="#475569" stroke-width="3"/>
+<path d="M859.6 199 L868.6 207 L859.6 215" fill="none" stroke="#475569" stroke-width="3"/>
+<rect x="873.6" y="145" width="186.4" height="125" class="b" fill="#fee2e2"/>
+<text x="966.8" y="195" text-anchor="middle" class="t">Action 2</text>
+<text x="966.8" y="230" text-anchor="middle" class="s">product report</text>
+<text x="550" y="345" text-anchor="middle" class="s">Conceptual diagram — actual execution and storage behavior depends on Spark version and configuration.</text></svg>

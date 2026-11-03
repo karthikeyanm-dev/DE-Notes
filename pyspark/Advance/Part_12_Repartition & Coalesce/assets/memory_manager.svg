@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="420" viewBox="0 0 1100 420">
+<defs><style>.head{font:bold 27px Arial;fill:#0f172a}.t{font:bold 19px Arial;fill:#0f172a}.s{font:15px Arial;fill:#334155}.b{stroke:#334155;stroke-width:2;rx:15;ry:15}</style></defs>
+<rect width="100%" height="100%" fill="white"/>
+<text x="40" y="48" class="head">Simplified Spark executor memory</text>
+<rect x="40.0" y="145" width="325.3" height="125" class="b" fill="#e0f2fe"/>
+<text x="202.7" y="195" text-anchor="middle" class="t">Execution memory</text>
+<text x="202.7" y="230" text-anchor="middle" class="s">sorts, joins, aggregations</text>
+<path d="M369.3 207 H382.3" stroke="#475569" stroke-width="3"/>
+<path d="M373.3 199 L382.3 207 L373.3 215" fill="none" stroke="#475569" stroke-width="3"/>
+<rect x="387.3" y="145" width="325.3" height="125" class="b" fill="#fef3c7"/>
+<text x="550.0" y="195" text-anchor="middle" class="t">Shared unified region</text>
+<text x="550.0" y="230" text-anchor="middle" class="s">execution and storage can share</text>
+<path d="M716.7 207 H729.7" stroke="#475569" stroke-width="3"/>
+<path d="M720.7 199 L729.7 207 L720.7 215" fill="none" stroke="#475569" stroke-width="3"/>
+<rect x="734.7" y="145" width="325.3" height="125" class="b" fill="#dcfce7"/>
+<text x="897.3" y="195" text-anchor="middle" class="t">Storage memory</text>
+<text x="897.3" y="230" text-anchor="middle" class="s">cached and broadcast blocks</text>
+<text x="550" y="345" text-anchor="middle" class="s">Conceptual diagram — actual execution and storage behavior depends on Spark version and configuration.</text></svg>
