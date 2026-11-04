@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="420" viewBox="0 0 1120 420">
+<style>.h{font:bold 28px Arial;fill:#0f172a}.t{font:bold 19px Arial;fill:#0f172a}.s{font:15px Arial;fill:#334155}</style>
+<rect width="100%" height="100%" fill="white"/>
+<text x="38" y="50" class="h">Complex data types</text>
+<rect x="35.0" y="135" width="195.6" height="145" rx="15" ry="15" stroke="#334155" stroke-width="2" fill="#dbeafe"/>
+<text x="132.8" y="190" text-anchor="middle" class="t">ArrayType</text>
+<text x="132.8" y="228" text-anchor="middle" class="s">ordered values</text>
+<path d="M233.6 207 H244.6 l-8 -7 m8 7 l-8 7" fill="none" stroke="#475569" stroke-width="3"/>
+<rect x="248.6" y="135" width="195.6" height="145" rx="15" ry="15" stroke="#334155" stroke-width="2" fill="#dcfce7"/>
+<text x="346.4" y="190" text-anchor="middle" class="t">StructType</text>
+<text x="346.4" y="228" text-anchor="middle" class="s">named fields</text>
+<path d="M447.2 207 H458.2 l-8 -7 m8 7 l-8 7" fill="none" stroke="#475569" stroke-width="3"/>
+<rect x="462.2" y="135" width="195.6" height="145" rx="15" ry="15" stroke="#334155" stroke-width="2" fill="#fef3c7"/>
+<text x="560.0" y="190" text-anchor="middle" class="t">MapType</text>
+<text x="560.0" y="228" text-anchor="middle" class="s">key and value</text>
+<path d="M660.8 207 H671.8 l-8 -7 m8 7 l-8 7" fill="none" stroke="#475569" stroke-width="3"/>
+<rect x="675.8" y="135" width="195.6" height="145" rx="15" ry="15" stroke="#334155" stroke-width="2" fill="#fce7f3"/>
+<text x="773.6" y="190" text-anchor="middle" class="t">explode</text>
+<text x="773.6" y="228" text-anchor="middle" class="s">one row per entry</text>
+<path d="M874.4 207 H885.4 l-8 -7 m8 7 l-8 7" fill="none" stroke="#475569" stroke-width="3"/>
+<rect x="889.4" y="135" width="195.6" height="145" rx="15" ry="15" stroke="#334155" stroke-width="2" fill="#ede9fe"/>
+<text x="987.2" y="190" text-anchor="middle" class="t">posexplode</text>
+<text x="987.2" y="228" text-anchor="middle" class="s">position + value</text>
+<text x="560" y="355" text-anchor="middle" class="s">Conceptual view of nested data and collection expansion in Spark SQL.</text></svg>

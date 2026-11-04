@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="420" viewBox="0 0 1120 420">
+<style>.h{font:bold 28px Arial;fill:#0f172a}.t{font:bold 19px Arial;fill:#0f172a}.s{font:15px Arial;fill:#334155}</style>
+<rect width="100%" height="100%" fill="white"/>
+<text x="38" y="50" class="h">Array vs Map vs Struct</text>
+<rect x="35.0" y="135" width="338.0" height="145" rx="15" ry="15" stroke="#334155" stroke-width="2" fill="#dbeafe"/>
+<text x="204.0" y="190" text-anchor="middle" class="t">Array</text>
+<text x="204.0" y="228" text-anchor="middle" class="s">ordered values</text>
+<path d="M376.0 207 H387.0 l-8 -7 m8 7 l-8 7" fill="none" stroke="#475569" stroke-width="3"/>
+<rect x="391.0" y="135" width="338.0" height="145" rx="15" ry="15" stroke="#334155" stroke-width="2" fill="#dcfce7"/>
+<text x="560.0" y="190" text-anchor="middle" class="t">Map</text>
+<text x="560.0" y="228" text-anchor="middle" class="s">dynamic key-value</text>
+<path d="M732.0 207 H743.0 l-8 -7 m8 7 l-8 7" fill="none" stroke="#475569" stroke-width="3"/>
+<rect x="747.0" y="135" width="338.0" height="145" rx="15" ry="15" stroke="#334155" stroke-width="2" fill="#fef3c7"/>
+<text x="916.0" y="190" text-anchor="middle" class="t">Struct</text>
+<text x="916.0" y="228" text-anchor="middle" class="s">fixed named fields</text>
+<text x="560" y="355" text-anchor="middle" class="s">Conceptual view of nested data and collection expansion in Spark SQL.</text></svg>
