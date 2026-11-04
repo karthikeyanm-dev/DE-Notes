@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="420" viewBox="0 0 1120 420">
+<style>.h{font:bold 27px Arial;fill:#0f172a}.t{font:bold 18px Arial;fill:#0f172a}.s{font:15px Arial;fill:#334155}</style>
+<rect width="100%" height="100%" fill="white"/>
+<text x="35" y="48" class="h">Nested column navigation</text>
+<rect x="30.0" y="130" width="251.5" height="150" rx="15" stroke="#334155" stroke-width="2" fill="#dbeafe"/>
+<text x="155.8" y="188" text-anchor="middle" class="t">Struct</text>
+<text x="155.8" y="228" text-anchor="middle" class="s">customer</text>
+<path d="M283.5 205 H295.5" stroke="#475569" stroke-width="3"/>
+<rect x="299.5" y="130" width="251.5" height="150" rx="15" stroke="#334155" stroke-width="2" fill="#dcfce7"/>
+<text x="425.2" y="188" text-anchor="middle" class="t">Nested struct</text>
+<text x="425.2" y="228" text-anchor="middle" class="s">address</text>
+<path d="M553.0 205 H565.0" stroke="#475569" stroke-width="3"/>
+<rect x="569.0" y="130" width="251.5" height="150" rx="15" stroke="#334155" stroke-width="2" fill="#fef3c7"/>
+<text x="694.8" y="188" text-anchor="middle" class="t">Field</text>
+<text x="694.8" y="228" text-anchor="middle" class="s">address.city</text>
+<path d="M822.5 205 H834.5" stroke="#475569" stroke-width="3"/>
+<rect x="838.5" y="130" width="251.5" height="150" rx="15" stroke="#334155" stroke-width="2" fill="#fce7f3"/>
+<text x="964.2" y="188" text-anchor="middle" class="t">Transform</text>
+<text x="964.2" y="228" text-anchor="middle" class="s">select / rebuild</text>
+</svg>
