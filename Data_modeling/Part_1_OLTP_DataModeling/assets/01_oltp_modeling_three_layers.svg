@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650">
+<rect width="1000" height="650" rx="24" fill="#f8fafc"/>
+<text x="500" y="55" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700" fill="#0f172a">Three Layers of OLTP Modeling</text>
+<g font-family="Arial" text-anchor="middle">
+<rect x="135" y="100" width="730" height="135" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/>
+<text x="500" y="145" font-size="27" font-weight="700" fill="#166534">1. CONCEPTUAL LAYER</text>
+<text x="500" y="183" font-size="20" fill="#166534">Requirement gathering • Business needs • Scope</text>
+<text x="500" y="213" font-size="17" fill="#166534">What does the business need to manage?</text>
+<path d="M500 235V275" stroke="#64748b" stroke-width="3"/>
+<path d="M490 265L500 278L510 265" fill="none" stroke="#64748b" stroke-width="3"/>
+<rect x="135" y="290" width="730" height="135" rx="18" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+<text x="500" y="335" font-size="27" font-weight="700" fill="#1e40af">2. LOGICAL LAYER</text>
+<text x="500" y="373" font-size="20" fill="#1e40af">Entities • Attributes • Keys • Relationships</text>
+<text x="500" y="403" font-size="17" fill="#1e40af">How is the business information organized?</text>
+<path d="M500 425V465" stroke="#64748b" stroke-width="3"/>
+<path d="M490 455L500 468L510 455" fill="none" stroke="#64748b" stroke-width="3"/>
+<rect x="135" y="480" width="730" height="135" rx="18" fill="#ffedd5" stroke="#ea580c" stroke-width="3"/>
+<text x="500" y="525" font-size="27" font-weight="700" fill="#9a3412">3. PHYSICAL LAYER</text>
+<text x="500" y="563" font-size="20" fill="#9a3412">Database tables • Data types • Indexes • Constraints</text>
+<text x="500" y="593" font-size="17" fill="#9a3412">How is it implemented in a database?</text>
+</g></svg>

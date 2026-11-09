@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 0 1000 720">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L9 3L0 6Z" fill="#64748b"/></marker></defs>
+<rect width="1000" height="720" rx="24" fill="#f8fafc"/>
+<text x="500" y="55" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#0f172a">Three Levels of Data Modeling</text>
+<g font-family="Arial,sans-serif" text-anchor="middle">
+<rect x="145" y="100" width="710" height="140" rx="18" fill="#ccfbf1" stroke="#0d9488" stroke-width="3"/><text x="500" y="150" font-size="27" font-weight="700" fill="#115e59">1. CONCEPTUAL MODEL</text><text x="500" y="188" font-size="20" fill="#134e4a">Business entities and requirements</text><text x="500" y="218" font-size="17" fill="#134e4a">Customer • Order • Product</text>
+<path d="M500 240V282" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="145" y="295" width="710" height="150" rx="18" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/><text x="500" y="345" font-size="27" font-weight="700" fill="#1e40af">2. LOGICAL MODEL</text><text x="500" y="383" font-size="20" fill="#1e3a8a">Attributes, keys, relationships and rules</text><text x="500" y="418" font-size="17" fill="#1e3a8a">ER diagram • PK • FK • Cardinality</text>
+<path d="M500 445V487" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="145" y="500" width="710" height="150" rx="18" fill="#ffedd5" stroke="#ea580c" stroke-width="3"/><text x="500" y="550" font-size="27" font-weight="700" fill="#9a3412">3. PHYSICAL MODEL</text><text x="500" y="588" font-size="20" fill="#7c2d12">Database-specific implementation</text><text x="500" y="623" font-size="17" fill="#7c2d12">Tables • Data types • Indexes • Constraints</text>
+</g>
+</svg>

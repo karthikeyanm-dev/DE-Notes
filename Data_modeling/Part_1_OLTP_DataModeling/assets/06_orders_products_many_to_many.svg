@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+<rect width="1200" height="650" rx="24" fill="#f8fafc"/>
+<text x="600.0" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700" fill="#0f172a">Orders and Products – Many-to-Many</text>
+<text x="600.0" y="82" text-anchor="middle" font-family="Arial" font-size="17" fill="#64748b">The business rule creates an M:N relationship.</text>
+<rect x="75" y="250" width="320" height="210" rx="12" fill="#fff" stroke="#d97706" stroke-width="2.5"/><rect x="75" y="250" width="320" height="52" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/><text x="235.0" y="284" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#0f172a">ORDERS</text><text x="97" y="338" font-family="Arial" font-size="17" fill="#334155">PK  order_id</text><rect x="805" y="250" width="320" height="210" rx="12" fill="#fff" stroke="#16a34a" stroke-width="2.5"/><rect x="805" y="250" width="320" height="52" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/><text x="965.0" y="284" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#0f172a">PRODUCTS</text><text x="827" y="338" font-family="Arial" font-size="17" fill="#334155">PK  product_id</text>
+<g stroke="#334155" stroke-width="3" fill="none">
+<path d="M395 355H805"/>
+<!-- crowfoot both ends -->
+<path d="M395 355L365 330 M395 355L365 355 M395 355L365 380"/>
+<path d="M805 355L835 330 M805 355L835 355 M805 355L835 380"/>
+</g>
+<g font-family="Arial" fill="#0f172a" text-anchor="middle">
+<text x="600" y="305" font-size="23" font-weight="700">M : N</text>
+<text x="600" y="445" font-size="19">One order can contain many products.</text>
+<text x="600" y="480" font-size="19">One product can appear in many orders.</text>
+<text x="600" y="555" font-size="17" fill="#475569">A direct many-to-many relationship is conceptual; relational tables need an associative entity.</text>
+</g>
+</svg>

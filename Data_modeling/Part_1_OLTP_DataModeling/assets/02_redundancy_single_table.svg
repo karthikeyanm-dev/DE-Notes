@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" rx="24" fill="#f8fafc"/>
+<text x="500" y="55" text-anchor="middle" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#0f172a">Data Redundancy in a Single Table</text>
+<rect x="65" y="110" width="870" height="330" rx="14" fill="#fff" stroke="#94a3b8" stroke-width="2"/>
+<path d="M65 165H935" stroke="#94a3b8" stroke-width="1.5"/>
+<rect x="65" y="110" width="870" height="55" rx="12" fill="#dbeafe"/>
+<g font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#1e3a8a">
+<text x="90" y="145">Order ID</text><text x="235" y="145">Customer ID</text><text x="405" y="145">Customer Name</text><text x="625" y="145">Phone</text><text x="830" y="145">Product</text></g>
+<g font-family="Arial,sans-serif" font-size="18" fill="#0f172a">
+<text x="100" y="220">101</text><text x="250" y="220">C01</text><text x="430" y="220">Gopal</text><text x="625" y="220">9876543210</text><text x="830" y="220">Phone</text>
+<text x="100" y="290">102</text><text x="250" y="290">C01</text><text x="430" y="290">Gopal</text><text x="625" y="290">9876543210</text><text x="830" y="290">TV</text>
+<text x="100" y="360">103</text><text x="250" y="360">C01</text><text x="430" y="360">Gopal</text><text x="625" y="360">9876543210</text><text x="830" y="360">TWS</text></g>
+<g stroke="#e2e8f0" stroke-width="2"><path d="M65 235H935M65 305H935M65 375H935"/></g>
+<rect x="390" y="177" width="245" height="205" rx="9" fill="none" stroke="#dc2626" stroke-width="3" stroke-dasharray="9 7"/>
+<text x="500" y="485" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#b91c1c">Customer details repeat for every order.</text>
+<text x="500" y="520" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#475569">Repeated values can cause update, insertion and deletion anomalies.</text>
+</svg>

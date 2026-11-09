@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+  <title>E-commerce Scenario 1 – Orders and Customers</title>
+  <desc>One customer can place zero or many orders. Every order belongs to exactly one customer. Crow's Foot symbols are correctly placed: zero-or-many at the Orders end and exactly-one at the Customers end.</desc>
+  <defs>
+    <style>
+      .heading { font: 700 30px Arial, sans-serif; fill: #111827; }
+      .subheading { font: 17px Arial, sans-serif; fill: #64748b; }
+      .entity-title { font: 700 23px Arial, sans-serif; fill: #111827; }
+      .attribute { font: 17px Arial, sans-serif; fill: #334155; }
+      .relation-label { font: 700 21px Arial, sans-serif; fill: #1e293b; }
+      .rule-order { font: 700 19px Arial, sans-serif; fill: #9a3412; }
+      .rule-customer { font: 700 19px Arial, sans-serif; fill: #166534; }
+      .note { font: 16px Arial, sans-serif; fill: #64748b; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="650" rx="22" fill="#f8fafc"/>
+
+  <text x="600" y="49" text-anchor="middle" class="heading">E-commerce Scenario 1 – Orders and Customers</text>
+  <text x="600" y="82" text-anchor="middle" class="subheading">One customer can place many orders; each order belongs to exactly one customer.</text>
+
+  <!-- ORDERS entity -->
+  <rect x="84" y="258" width="330" height="232" rx="13" fill="#ffffff" stroke="#d97706" stroke-width="2.5"/>
+  <path d="M97 258 H401 Q414 258 414 271 V310 H84 V271 Q84 258 97 258 Z" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+  <text x="249" y="291" text-anchor="middle" class="entity-title">ORDERS</text>
+  <text x="107" y="350" class="attribute"><tspan font-weight="700">PK</tspan>  order_id</text>
+  <text x="107" y="388" class="attribute"><tspan font-weight="700">FK</tspan>  customer_id</text>
+  <text x="107" y="426" class="attribute">order_date</text>
+
+  <!-- CUSTOMERS entity -->
+  <rect x="786" y="258" width="330" height="232" rx="13" fill="#ffffff" stroke="#16a34a" stroke-width="2.5"/>
+  <path d="M799 258 H1103 Q1116 258 1116 271 V310 H786 V271 Q786 258 799 258 Z" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="951" y="291" text-anchor="middle" class="entity-title">CUSTOMERS</text>
+  <text x="809" y="350" class="attribute"><tspan font-weight="700">PK</tspan>  customer_id</text>
+  <text x="809" y="388" class="attribute">first_name</text>
+  <text x="809" y="426" class="attribute">email</text>
+
+  <!-- Relationship line -->
+  <line x1="414" y1="374" x2="786" y2="374" stroke="#334155" stroke-width="3"/>
+
+  <!-- Orders endpoint: zero or many (O<) -->
+  <circle cx="444" cy="374" r="10" fill="#f8fafc" stroke="#0f766e" stroke-width="3"/>
+  <path d="M477 374 L449 347 M477 374 L449 374 M477 374 L449 401"
+        fill="none" stroke="#334155" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Customers endpoint: exactly one (||) -->
+  <line x1="754" y1="355" x2="754" y2="393" stroke="#334155" stroke-width="3.2"/>
+  <line x1="768" y1="355" x2="768" y2="393" stroke="#334155" stroke-width="3.2"/>
+
+  <!-- Relationship interpretation -->
+  <text x="600" y="298" text-anchor="middle" class="relation-label">1 Customer : 0..Many Orders</text>
+  <text x="600" y="451" text-anchor="middle" class="rule-order">Each Customer → 0 to many Orders</text>
+  <text x="600" y="480" text-anchor="middle" class="rule-customer">Each Order → exactly 1 Customer</text>
+
+  <text x="600" y="555" text-anchor="middle" class="note">A customer may register before placing an order, so zero orders are allowed.</text>
+  <text x="600" y="586" text-anchor="middle" class="note">Crow's Foot: O&lt; at the Orders end = zero or many; || at the Customers end = exactly one.</text>
+</svg>

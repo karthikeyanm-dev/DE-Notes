@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="610" viewBox="0 0 1000 610">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L9 3L0 6Z" fill="#64748b"/></marker></defs>
+<rect width="1000" height="610" rx="24" fill="#f8fafc"/>
+<text x="500" y="55" text-anchor="middle" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#0f172a">Logical ER Model – Customer and Orders</text>
+<g font-family="Arial,sans-serif">
+<rect x="80" y="125" width="350" height="290" rx="16" fill="#fff" stroke="#0d9488" stroke-width="3"/><rect x="80" y="125" width="350" height="64" rx="13" fill="#0d9488"/><text x="255" y="167" text-anchor="middle" font-size="25" font-weight="700" fill="#fff">CUSTOMER</text>
+<g font-size="21" fill="#0f172a"><text x="120" y="245">PK  customer_id</text><text x="120" y="290">first_name</text><text x="120" y="335">last_name</text><text x="120" y="380">email</text></g>
+<rect x="570" y="125" width="350" height="290" rx="16" fill="#fff" stroke="#2563eb" stroke-width="3"/><rect x="570" y="125" width="350" height="64" rx="13" fill="#2563eb"/><text x="745" y="167" text-anchor="middle" font-size="25" font-weight="700" fill="#fff">ORDERS</text>
+<g font-size="21" fill="#0f172a"><text x="610" y="245">PK  order_id</text><text x="610" y="290">FK  customer_id</text><text x="610" y="335">order_date</text><text x="610" y="380">order_amount</text></g>
+<path d="M430 275H570" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/><text x="500" y="250" text-anchor="middle" font-size="18" fill="#334155">1 : N</text>
+</g>
+<text x="500" y="485" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#334155">One customer can place many orders.</text>
+<text x="500" y="525" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#64748b">ORDERS.customer_id references CUSTOMER.customer_id.</text>
+</svg>

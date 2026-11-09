@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L9 3L0 6Z" fill="#64748b"/></marker></defs>
+<rect width="1100" height="650" rx="24" fill="#f8fafc"/>
+<text x="550" y="55" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700" fill="#0f172a">Requirement Gathering – Talk to Business Stakeholders</text>
+<rect x="390" y="115" width="320" height="105" rx="18" fill="#ede9fe" stroke="#7c3aed" stroke-width="3"/>
+<text x="550" y="158" text-anchor="middle" font-family="Arial" font-size="25" font-weight="700" fill="#5b21b6">Business Requirements</text>
+<text x="550" y="190" text-anchor="middle" font-family="Arial" font-size="17" fill="#5b21b6">Goals • Processes • Information needs</text>
+<g font-family="Arial" text-anchor="middle">
+<rect x="55" y="330" width="220" height="115" rx="16" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="165" y="375" font-size="22" font-weight="700" fill="#1e40af">Business Folks</text>
+<text x="165" y="410" font-size="17" fill="#1e40af">Business objectives</text>
+<rect x="310" y="330" width="220" height="115" rx="16" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="420" y="375" font-size="22" font-weight="700" fill="#166534">SMEs</text>
+<text x="420" y="410" font-size="17" fill="#166534">Domain knowledge</text>
+<rect x="565" y="330" width="220" height="115" rx="16" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+<text x="675" y="375" font-size="22" font-weight="700" fill="#9a3412">Team Leads</text>
+<text x="675" y="410" font-size="17" fill="#9a3412">Team workflows</text>
+<rect x="820" y="330" width="220" height="115" rx="16" fill="#fce7f3" stroke="#db2777" stroke-width="2"/>
+<text x="930" y="375" font-size="22" font-weight="700" fill="#9d174d">Developers</text>
+<text x="930" y="410" font-size="17" fill="#9d174d">Technical feasibility</text>
+</g>
+<g stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#a)">
+<path d="M550 220V270H165V320"/><path d="M550 220V280H420V320"/><path d="M550 220V280H675V320"/><path d="M550 220V270H930V320"/>
+</g>
+<text x="550" y="510" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700" fill="#334155">Ask questions, listen, document and validate requirements</text>
+<rect x="210" y="545" width="680" height="55" rx="12" fill="#e2e8f0"/>
+<text x="550" y="580" text-anchor="middle" font-family="Arial" font-size="19" fill="#334155">Output: an agreed understanding of what the system must support</text>
+</svg>

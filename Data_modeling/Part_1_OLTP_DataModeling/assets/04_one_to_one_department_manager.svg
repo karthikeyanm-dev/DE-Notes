@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+<rect width="1200" height="650" rx="24" fill="#f8fafc"/>
+<text x="600.0" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700" fill="#0f172a">One-to-One (1:1) Relationship</text>
+<text x="600.0" y="82" text-anchor="middle" font-family="Arial" font-size="17" fill="#64748b">Example: Department and Manager under a strict one-manager-per-department rule.</text>
+<rect x="100" y="270" width="330" height="210" rx="12" fill="#fff" stroke="#d97706" stroke-width="2.5"/><rect x="100" y="270" width="330" height="52" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/><text x="265.0" y="304" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#0f172a">DEPARTMENTS</text><text x="122" y="358" font-family="Arial" font-size="17" fill="#334155">PK  department_id</text><text x="122" y="390" font-family="Arial" font-size="17" fill="#334155">department_name</text><rect x="770" y="270" width="330" height="210" rx="12" fill="#fff" stroke="#16a34a" stroke-width="2.5"/><rect x="770" y="270" width="330" height="52" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/><text x="935.0" y="304" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#0f172a">MANAGERS</text><text x="792" y="358" font-family="Arial" font-size="17" fill="#334155">PK  manager_id</text><text x="792" y="390" font-family="Arial" font-size="17" fill="#334155">manager_name</text>
+<g stroke="#334155" stroke-width="3" fill="none">
+<path d="M430 375H770"/>
+<!-- exactly one endpoint both sides -->
+<path d="M445 355V395 M455 355V395 M745 355V395 M755 355V395"/>
+</g>
+<g font-family="Arial" fill="#0f172a" text-anchor="middle">
+<text x="600" y="325" font-size="22" font-weight="700">1 : 1</text>
+<text x="600" y="450" font-size="18">Illustrative mandatory one-to-one rule</text>
+<text x="600" y="530" font-size="17" fill="#475569">Each department has exactly one manager, and each manager manages exactly one department.</text>
+</g>
+</svg>

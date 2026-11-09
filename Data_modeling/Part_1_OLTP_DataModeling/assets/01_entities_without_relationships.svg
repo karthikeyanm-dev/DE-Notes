@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1050" viewBox="0 0 1500 1050">
+<rect width="1500" height="1050" rx="24" fill="#f8fafc"/>
+<text x="750" y="55" text-anchor="middle" font-family="Arial" font-size="34" font-weight="700" fill="#0f172a">E-commerce Logical Model – Entities and Attributes</text>
+<text x="750" y="92" text-anchor="middle" font-family="Arial" font-size="19" fill="#475569">Entity boxes only • No relationship lines in this lesson</text>
+<g font-family="Arial" font-size="19" fill="#0f172a">
+<!-- Customers -->
+<rect x="65" y="145" width="390" height="350" rx="10" fill="#fff" stroke="#2563eb" stroke-width="2.5"/>
+<rect x="65" y="145" width="390" height="55" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="260" y="181" text-anchor="middle" font-size="24" font-weight="700" fill="#1e40af">CUSTOMERS</text>
+<path d="M65 200H455" stroke="#2563eb" stroke-width="1.5"/>
+<text x="90" y="238" font-weight="700">PK  customer_id</text>
+<text x="90" y="280">first_name</text><text x="90" y="322">last_name</text><text x="90" y="364">email  (UNIQUE)</text><text x="90" y="406">phone_number</text><text x="90" y="448">date_joined</text>
+<!-- Orders -->
+<rect x="555" y="145" width="390" height="420" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="2.5"/>
+<rect x="555" y="145" width="390" height="55" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="750" y="181" text-anchor="middle" font-size="24" font-weight="700" fill="#5b21b6">ORDERS</text>
+<path d="M555 200H945" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="580" y="238" font-weight="700">PK  order_id</text>
+<text x="580" y="280">customer_id  (reference candidate)</text>
+<text x="580" y="322">order_date</text><text x="580" y="364">total_amount</text>
+<text x="580" y="406">store_branch_id</text><text x="580" y="448">store_branch_name*</text><text x="580" y="490">store_branch_location*</text>
+<!-- Payments -->
+<rect x="1045" y="145" width="390" height="350" rx="10" fill="#fff" stroke="#16a34a" stroke-width="2.5"/>
+<rect x="1045" y="145" width="390" height="55" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+<text x="1240" y="181" text-anchor="middle" font-size="24" font-weight="700" fill="#166534">PAYMENTS</text>
+<path d="M1045 200H1435" stroke="#16a34a" stroke-width="1.5"/>
+<text x="1070" y="238" font-weight="700">PK  payment_id</text>
+<text x="1070" y="280">order_id  (reference candidate)</text>
+<text x="1070" y="322">payment_method</text><text x="1070" y="364">payment_amount</text>
+<text x="1070" y="406">payment_status</text><text x="1070" y="448">transaction_timestamp</text>
+<!-- Products -->
+<rect x="310" y="640" width="390" height="350" rx="10" fill="#fff" stroke="#0284c7" stroke-width="2.5"/>
+<rect x="310" y="640" width="390" height="55" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="2.5"/>
+<text x="505" y="676" text-anchor="middle" font-size="24" font-weight="700" fill="#075985">PRODUCTS</text>
+<path d="M310 695H700" stroke="#0284c7" stroke-width="1.5"/>
+<text x="335" y="733" font-weight="700">PK  product_id</text>
+<text x="335" y="775">product_name</text><text x="335" y="817">category_id  (reference candidate)</text>
+<text x="335" y="859">price</text><text x="335" y="901">stock_qty</text>
+<!-- Shipments -->
+<rect x="800" y="640" width="390" height="350" rx="10" fill="#fff" stroke="#d97706" stroke-width="2.5"/>
+<rect x="800" y="640" width="390" height="55" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+<text x="995" y="676" text-anchor="middle" font-size="24" font-weight="700" fill="#92400e">SHIPMENTS</text>
+<path d="M800 695H1190" stroke="#d97706" stroke-width="1.5"/>
+<text x="825" y="733" font-weight="700">PK  shipment_id</text>
+<text x="825" y="775">order_id  (reference candidate)</text>
+<text x="825" y="817">shipping_carrier</text><text x="825" y="859">tracking_number</text>
+<text x="825" y="901">shipment_status</text><text x="825" y="943">estimated_delivery_date</text>
+</g>
+<text x="750" y="1025" text-anchor="middle" font-family="Arial" font-size="16" fill="#64748b">*Store branch name and location are shown to match the draft; review the design note before implementation.</text>
+</svg>
