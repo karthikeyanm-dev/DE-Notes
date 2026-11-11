@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+<title>Enterprise data warehouse and data mart</title>
+<desc>An enterprise data warehouse integrates data across the organization; data marts serve focused analytical areas.</desc>
+<defs>
+  <style>
+    .bg{fill:#f7f9fc} .panel{fill:#ffffff;stroke:#d7dfeb;stroke-width:2}
+    .ink{fill:#17243a} .muted{fill:#64748b}
+    .h1{font:700 30px Arial,sans-serif;fill:#14213a}
+    .h2{font:700 21px Arial,sans-serif;fill:#17243a}
+    .body{font:17px Arial,sans-serif;fill:#334155}
+    .small{font:15px Arial,sans-serif;fill:#64748b}
+    .tiny{font:13px Arial,sans-serif;fill:#64748b}
+    .white{fill:#fff} .line{stroke:#64748b;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .blue{fill:#e7f0ff;stroke:#3b82f6;stroke-width:2} .green{fill:#e7f7ef;stroke:#16a34a;stroke-width:2}
+    .amber{fill:#fff4d6;stroke:#d97706;stroke-width:2} .purple{fill:#f1eaff;stroke:#8b5cf6;stroke-width:2}
+    .red{fill:#fff0f0;stroke:#dc6868;stroke-width:2}
+  </style>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker>
+</defs>
+<rect class="bg" width="1200" height="680" rx="22"/>
+<text x="600" y="52" text-anchor="middle" class="h1">Data Warehouse vs Data Mart</text>
+<rect x="70" y="125" width="1060" height="170" rx="18" class="green"/>
+<text x="600" y="170" text-anchor="middle" class="h2">Enterprise Data Warehouse (EDW)</text>
+<text x="600" y="207" text-anchor="middle" class="body">Integrated · historical · organization-wide · governed</text>
+<text x="600" y="245" text-anchor="middle" class="small">Combines data from sales, customer, finance, inventory and operations</text>
+<path d="M600 295 V360 M210 360 H990 M210 360 V405 M470 360 V405 M730 360 V405 M990 360 V405" class="line"/>
+<rect x="90" y="405" width="240" height="140" rx="14" class="blue"/>
+<text x="210" y="450" text-anchor="middle" class="h2">Sales Mart</text><text x="210" y="485" text-anchor="middle" class="small">Revenue · orders</text><text x="210" y="515" text-anchor="middle" class="tiny">Sales team</text>
+<rect x="350" y="405" width="240" height="140" rx="14" class="purple"/>
+<text x="470" y="450" text-anchor="middle" class="h2">Customer Mart</text><text x="470" y="485" text-anchor="middle" class="small">Segments · retention</text><text x="470" y="515" text-anchor="middle" class="tiny">Marketing team</text>
+<rect x="610" y="405" width="240" height="140" rx="14" class="amber"/>
+<text x="730" y="450" text-anchor="middle" class="h2">Finance Mart</text><text x="730" y="485" text-anchor="middle" class="small">Costs · margins</text><text x="730" y="515" text-anchor="middle" class="tiny">Finance team</text>
+<rect x="870" y="405" width="240" height="140" rx="14" class="red"/>
+<text x="990" y="450" text-anchor="middle" class="h2">Inventory Mart</text><text x="990" y="485" text-anchor="middle" class="small">Stock · movement</text><text x="990" y="515" text-anchor="middle" class="tiny">Operations team</text>
+<text x="600" y="615" text-anchor="middle" class="small">Analogy: EDW is the central library; data marts are curated subject-specific sections.</text>
+</svg>

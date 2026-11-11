@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+<title>Fact table grain comparison</title>
+<desc>Different fact table grains represent different business events or snapshots and must not be mixed casually.</desc>
+<defs>
+  <style>
+    .bg{fill:#f7f9fc} .panel{fill:#ffffff;stroke:#d7dfeb;stroke-width:2}
+    .ink{fill:#17243a} .muted{fill:#64748b}
+    .h1{font:700 30px Arial,sans-serif;fill:#14213a}
+    .h2{font:700 21px Arial,sans-serif;fill:#17243a}
+    .body{font:17px Arial,sans-serif;fill:#334155}
+    .small{font:15px Arial,sans-serif;fill:#64748b}
+    .tiny{font:13px Arial,sans-serif;fill:#64748b}
+    .white{fill:#fff} .line{stroke:#64748b;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .blue{fill:#e7f0ff;stroke:#3b82f6;stroke-width:2} .green{fill:#e7f7ef;stroke:#16a34a;stroke-width:2}
+    .amber{fill:#fff4d6;stroke:#d97706;stroke-width:2} .purple{fill:#f1eaff;stroke:#8b5cf6;stroke-width:2}
+    .red{fill:#fff0f0;stroke:#dc6868;stroke-width:2}
+  </style>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker>
+</defs>
+<rect class="bg" width="1200" height="680" rx="22"/>
+<text x="600" y="50" text-anchor="middle" class="h1">Grain: What exactly does one fact row represent?</text>
+<rect x="60" y="110" width="330" height="420" rx="16" class="panel"/>
+<rect x="435" y="110" width="330" height="420" rx="16" class="panel"/>
+<rect x="810" y="110" width="330" height="420" rx="16" class="panel"/>
+<rect x="85" y="135" width="280" height="60" rx="10" class="blue"/><text x="225" y="173" text-anchor="middle" class="h2">Order-line grain</text>
+<rect x="460" y="135" width="280" height="60" rx="10" class="green"/><text x="600" y="173" text-anchor="middle" class="h2">Daily sales grain</text>
+<rect x="835" y="135" width="280" height="60" rx="10" class="purple"/><text x="975" y="173" text-anchor="middle" class="h2">Monthly stock grain</text>
+<g class="body"><text x="95" y="240">One row per product</text><text x="95" y="270">line in an order.</text>
+<text x="95" y="330">Order 5001 · Laptop</text><text x="95" y="365">Order 5001 · Mouse</text><text x="95" y="400">Order 5002 · Keyboard</text>
+<text x="470" y="240">One row per day</text><text x="470" y="270">per defined slice</text><text x="470" y="330">2026-11-01 · Chennai</text><text x="470" y="365">2026-11-02 · Chennai</text><text x="470" y="400">2026-11-03 · Chennai</text>
+<text x="845" y="240">One row per product</text><text x="845" y="270">per warehouse per month.</text><text x="845" y="330">Laptop · WH01 · Nov</text><text x="845" y="365">Mouse · WH01 · Nov</text><text x="845" y="400">Laptop · WH02 · Nov</text></g>
+<path d="M80 445 H370 M455 445 H745 M830 445 H1120" stroke="#cbd5e1" stroke-width="2"/>
+<g class="small"><text x="225" y="480" text-anchor="middle">Detailed transaction</text><text x="600" y="480" text-anchor="middle">Periodic aggregate</text><text x="975" y="480" text-anchor="middle">Periodic snapshot</text></g>
+<text x="600" y="590" text-anchor="middle" class="h2">Declare the grain before selecting facts and dimensions.</text>
+<text x="600" y="625" text-anchor="middle" class="small">Mixing different grains in one fact table can create double counting and misleading totals.</text>
+</svg>

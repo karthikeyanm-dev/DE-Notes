@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+<title>Business process identification and bus matrix</title>
+<desc>Business processes are mapped against reusable conformed dimensions.</desc>
+<defs>
+  <style>
+    .bg{fill:#f7f9fc} .panel{fill:#ffffff;stroke:#d7dfeb;stroke-width:2}
+    .ink{fill:#17243a} .muted{fill:#64748b}
+    .h1{font:700 30px Arial,sans-serif;fill:#14213a}
+    .h2{font:700 21px Arial,sans-serif;fill:#17243a}
+    .body{font:17px Arial,sans-serif;fill:#334155}
+    .small{font:15px Arial,sans-serif;fill:#64748b}
+    .tiny{font:13px Arial,sans-serif;fill:#64748b}
+    .white{fill:#fff} .line{stroke:#64748b;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .blue{fill:#e7f0ff;stroke:#3b82f6;stroke-width:2} .green{fill:#e7f7ef;stroke:#16a34a;stroke-width:2}
+    .amber{fill:#fff4d6;stroke:#d97706;stroke-width:2} .purple{fill:#f1eaff;stroke:#8b5cf6;stroke-width:2}
+    .red{fill:#fff0f0;stroke:#dc6868;stroke-width:2}
+  </style>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker>
+</defs>
+<rect class="bg" width="1200" height="680" rx="22"/>
+<text x="600" y="50" text-anchor="middle" class="h1">Identify business processes before designing facts</text>
+<text x="75" y="110" class="h2">E-commerce business processes</text>
+<rect x="70" y="135" width="300" height="68" rx="12" class="blue"/><text x="220" y="177" text-anchor="middle" class="h2">Sales / Orders</text>
+<rect x="70" y="225" width="300" height="68" rx="12" class="green"/><text x="220" y="267" text-anchor="middle" class="h2">Payments</text>
+<rect x="70" y="315" width="300" height="68" rx="12" class="purple"/><text x="220" y="357" text-anchor="middle" class="h2">Shipments</text>
+<rect x="70" y="405" width="300" height="68" rx="12" class="amber"/><text x="220" y="447" text-anchor="middle" class="h2">Inventory</text>
+<path d="M370 169 H425 M370 259 H425 M370 349 H425 M370 439 H425" class="line" marker-end="url(#arrow)"/>
+<text x="445" y="110" class="h2">Illustrative bus matrix</text>
+<g transform="translate(445,135)">
+<rect width="690" height="340" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<rect width="690" height="58" fill="#e8eef7"/>
+<g class="small" font-weight="bold"><text x="18" y="36">Process</text><text x="225" y="36">Date</text><text x="320" y="36">Customer</text><text x="435" y="36">Product</text><text x="535" y="36">Store</text><text x="620" y="36">Carrier</text></g>
+<g stroke="#d7dfeb" stroke-width="1"><path d="M205 0 V340 M300 0 V340 M415 0 V340 M515 0 V340 M605 0 V340 M0 58 H690 M0 128 H690 M0 198 H690 M0 268 H690"/></g>
+<g class="body"><text x="18" y="100">Sales</text><text x="18" y="170">Payments</text><text x="18" y="240">Shipments</text><text x="18" y="310">Inventory</text></g>
+<g fill="#16a34a" font-size="23" font-weight="bold"><text x="240" y="102">✓</text><text x="335" y="102">✓</text><text x="450" y="102">✓</text><text x="550" y="102">✓</text>
+<text x="240" y="172">✓</text><text x="335" y="172">✓</text><text x="550" y="172">✓</text>
+<text x="240" y="242">✓</text><text x="335" y="242">✓</text><text x="450" y="242">✓</text><text x="630" y="242">✓</text>
+<text x="240" y="312">✓</text><text x="450" y="312">✓</text><text x="550" y="312">✓</text></g>
+</g>
+<text x="600" y="545" text-anchor="middle" class="body">A bus matrix reveals reusable dimensions across business processes.</text>
+<text x="600" y="580" text-anchor="middle" class="small">The checkmarks are illustrative; confirm each dimension from business requirements.</text>
+</svg>

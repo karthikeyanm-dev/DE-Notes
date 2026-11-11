@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+<title>Dimensional modeling lifecycle</title>
+<desc>Dimensional modeling progresses from business requirements and process selection through grain, dimensions, facts, review and delivery.</desc>
+<defs>
+  <style>
+    .bg{fill:#f7f9fc} .panel{fill:#ffffff;stroke:#d7dfeb;stroke-width:2}
+    .ink{fill:#17243a} .muted{fill:#64748b}
+    .h1{font:700 30px Arial,sans-serif;fill:#14213a}
+    .h2{font:700 21px Arial,sans-serif;fill:#17243a}
+    .body{font:17px Arial,sans-serif;fill:#334155}
+    .small{font:15px Arial,sans-serif;fill:#64748b}
+    .tiny{font:13px Arial,sans-serif;fill:#64748b}
+    .white{fill:#fff} .line{stroke:#64748b;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .blue{fill:#e7f0ff;stroke:#3b82f6;stroke-width:2} .green{fill:#e7f7ef;stroke:#16a34a;stroke-width:2}
+    .amber{fill:#fff4d6;stroke:#d97706;stroke-width:2} .purple{fill:#f1eaff;stroke:#8b5cf6;stroke-width:2}
+    .red{fill:#fff0f0;stroke:#dc6868;stroke-width:2}
+  </style>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker>
+</defs>
+<rect class="bg" width="1200" height="680" rx="22"/>
+<text x="600" y="50" text-anchor="middle" class="h1">Dimensional Modeling Lifecycle</text>
+<g>
+<rect x="90" y="130" width="300" height="105" rx="16" class="blue"/><text x="240" y="172" text-anchor="middle" class="h2">1. Understand requirements</text><text x="240" y="205" text-anchor="middle" class="small">Questions · users · decisions</text>
+<rect x="450" y="130" width="300" height="105" rx="16" class="green"/><text x="600" y="172" text-anchor="middle" class="h2">2. Select business process</text><text x="600" y="205" text-anchor="middle" class="small">Sales · payments · inventory</text>
+<rect x="810" y="130" width="300" height="105" rx="16" class="purple"/><text x="960" y="172" text-anchor="middle" class="h2">3. Declare the grain</text><text x="960" y="205" text-anchor="middle" class="small">Define one row precisely</text>
+<path d="M390 182 H445 M750 182 H805" class="line" marker-end="url(#arrow)"/>
+<rect x="810" y="355" width="300" height="105" rx="16" class="amber"/><text x="960" y="397" text-anchor="middle" class="h2">4. Identify dimensions</text><text x="960" y="430" text-anchor="middle" class="small">Who · what · when · where</text>
+<rect x="450" y="355" width="300" height="105" rx="16" class="red"/><text x="600" y="397" text-anchor="middle" class="h2">5. Identify facts</text><text x="600" y="430" text-anchor="middle" class="small">Quantity · amount · count</text>
+<rect x="90" y="355" width="300" height="105" rx="16" class="blue"/><text x="240" y="397" text-anchor="middle" class="h2">6. Review and validate</text><text x="240" y="430" text-anchor="middle" class="small">Business rules · consistency</text>
+<path d="M960 235 V350 M810 407 H755 M450 407 H395" class="line" marker-end="url(#arrow)"/>
+<path d="M240 460 V520 H600 V470" class="line" marker-end="url(#arrow)"/>
+<rect x="390" y="520" width="420" height="75" rx="14" class="green"/><text x="600" y="565" text-anchor="middle" class="h2">7. Publish, monitor and evolve the model</text>
+<text x="600" y="640" text-anchor="middle" class="small">Iterative process: business understanding and model validation continue over time.</text>
+</g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+<title>Kimball and Inmon approaches</title>
+<desc>Kimball commonly emphasizes dimensional data marts integrated through conformed dimensions; Inmon commonly emphasizes an enterprise data warehouse first.</desc>
+<defs>
+  <style>
+    .bg{fill:#f7f9fc} .panel{fill:#ffffff;stroke:#d7dfeb;stroke-width:2}
+    .ink{fill:#17243a} .muted{fill:#64748b}
+    .h1{font:700 30px Arial,sans-serif;fill:#14213a}
+    .h2{font:700 21px Arial,sans-serif;fill:#17243a}
+    .body{font:17px Arial,sans-serif;fill:#334155}
+    .small{font:15px Arial,sans-serif;fill:#64748b}
+    .tiny{font:13px Arial,sans-serif;fill:#64748b}
+    .white{fill:#fff} .line{stroke:#64748b;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .blue{fill:#e7f0ff;stroke:#3b82f6;stroke-width:2} .green{fill:#e7f7ef;stroke:#16a34a;stroke-width:2}
+    .amber{fill:#fff4d6;stroke:#d97706;stroke-width:2} .purple{fill:#f1eaff;stroke:#8b5cf6;stroke-width:2}
+    .red{fill:#fff0f0;stroke:#dc6868;stroke-width:2}
+  </style>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker>
+</defs>
+<rect class="bg" width="1200" height="680" rx="22"/>
+<text x="600" y="50" text-anchor="middle" class="h1">Two classic Data Warehouse approaches</text>
+<rect x="55" y="105" width="520" height="500" rx="18" class="panel"/>
+<rect x="625" y="105" width="520" height="500" rx="18" class="panel"/>
+<rect x="85" y="130" width="460" height="60" rx="12" class="blue"/><text x="315" y="168" text-anchor="middle" class="h2">Kimball · Bottom-up emphasis</text>
+<rect x="655" y="130" width="460" height="60" rx="12" class="green"/><text x="885" y="168" text-anchor="middle" class="h2">Inmon · Top-down emphasis</text>
+<rect x="105" y="225" width="420" height="70" rx="12" class="blue"/><text x="315" y="268" text-anchor="middle" class="body">Sales Data Mart</text>
+<rect x="105" y="325" width="420" height="70" rx="12" class="purple"/><text x="315" y="368" text-anchor="middle" class="body">Inventory Data Mart</text>
+<rect x="105" y="425" width="420" height="70" rx="12" class="amber"/><text x="315" y="468" text-anchor="middle" class="body">Customer Service Data Mart</text>
+<path d="M315 295 V315 M315 395 V415" class="line"/>
+<text x="315" y="545" text-anchor="middle" class="small">Integrate marts with conformed dimensions</text>
+<rect x="705" y="225" width="360" height="100" rx="12" class="green"/><text x="885" y="265" text-anchor="middle" class="h2">Enterprise Data Warehouse</text><text x="885" y="295" text-anchor="middle" class="small">Integrated enterprise data</text>
+<path d="M885 325 V370 M760 370 H1010 M760 370 V410 M885 370 V410 M1010 370 V410" class="line"/>
+<rect x="680" y="410" width="160" height="75" rx="12" class="blue"/><text x="760" y="455" text-anchor="middle" class="body">Sales Mart</text>
+<rect x="805" y="510" width="160" height="65" rx="12" class="purple"/><text x="885" y="550" text-anchor="middle" class="body">Inventory Mart</text>
+<rect x="930" y="410" width="160" height="75" rx="12" class="amber"/><text x="1010" y="455" text-anchor="middle" class="body">Finance Mart</text>
+<text x="600" y="645" text-anchor="middle" class="small">Simplified teaching models: real organizations often combine ideas from both approaches.</text>
+</svg>

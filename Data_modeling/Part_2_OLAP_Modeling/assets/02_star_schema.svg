@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+<title>Dimensional model star schema</title>
+<desc>A sales fact table is surrounded by descriptive dimension tables.</desc>
+<defs>
+  <style>
+    .bg{fill:#f7f9fc} .panel{fill:#ffffff;stroke:#d7dfeb;stroke-width:2}
+    .ink{fill:#17243a} .muted{fill:#64748b}
+    .h1{font:700 30px Arial,sans-serif;fill:#14213a}
+    .h2{font:700 21px Arial,sans-serif;fill:#17243a}
+    .body{font:17px Arial,sans-serif;fill:#334155}
+    .small{font:15px Arial,sans-serif;fill:#64748b}
+    .tiny{font:13px Arial,sans-serif;fill:#64748b}
+    .white{fill:#fff} .line{stroke:#64748b;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .blue{fill:#e7f0ff;stroke:#3b82f6;stroke-width:2} .green{fill:#e7f7ef;stroke:#16a34a;stroke-width:2}
+    .amber{fill:#fff4d6;stroke:#d97706;stroke-width:2} .purple{fill:#f1eaff;stroke:#8b5cf6;stroke-width:2}
+    .red{fill:#fff0f0;stroke:#dc6868;stroke-width:2}
+  </style>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker>
+</defs>
+<rect class="bg" width="1200" height="680" rx="22"/>
+<text x="600" y="50" text-anchor="middle" class="h1">Dimensional Modeling: the Star Schema</text>
+<rect x="420" y="235" width="360" height="210" rx="16" class="amber"/>
+<text x="600" y="275" text-anchor="middle" class="h2">FACT_SALES</text>
+<text x="455" y="315" class="body">• date_key (FK)</text><text x="455" y="350" class="body">• customer_key (FK)</text>
+<text x="455" y="385" class="body">• product_key (FK)</text><text x="455" y="420" class="body">• quantity · sales_amount</text>
+<rect x="65" y="125" width="260" height="135" rx="14" class="blue"/>
+<text x="195" y="165" text-anchor="middle" class="h2">DIM_CUSTOMER</text><text x="195" y="200" text-anchor="middle" class="small">Name · segment · city</text><text x="195" y="230" text-anchor="middle" class="tiny">Who bought?</text>
+<rect x="875" y="125" width="260" height="135" rx="14" class="green"/>
+<text x="1005" y="165" text-anchor="middle" class="h2">DIM_PRODUCT</text><text x="1005" y="200" text-anchor="middle" class="small">Name · brand · category</text><text x="1005" y="230" text-anchor="middle" class="tiny">What was bought?</text>
+<rect x="65" y="470" width="260" height="135" rx="14" class="purple"/>
+<text x="195" y="510" text-anchor="middle" class="h2">DIM_DATE</text><text x="195" y="545" text-anchor="middle" class="small">Day · month · quarter · year</text><text x="195" y="575" text-anchor="middle" class="tiny">When did it happen?</text>
+<rect x="875" y="470" width="260" height="135" rx="14" class="red"/>
+<text x="1005" y="510" text-anchor="middle" class="h2">DIM_STORE</text><text x="1005" y="545" text-anchor="middle" class="small">Branch · city · region</text><text x="1005" y="575" text-anchor="middle" class="tiny">Where did it happen?</text>
+<path d="M325 205 L420 275 M875 205 L780 275 M325 535 L420 405 M875 535 L780 405" class="line"/>
+<text x="600" y="650" text-anchor="middle" class="small">Dimensions provide context; facts record measurable business events.</text>
+</svg>
