@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+<title>Dimension Design Principles</title><desc>A practical checklist for useful, governed dimensions</desc><style>
+.bg{fill:#f7f9fc} .title{font:700 30px Arial;fill:#14213a} .sub{font:17px Arial;fill:#64748b}
+.h{font:700 21px Arial;fill:#17243a} .t{font:17px Arial;fill:#334155} .foot{font:14px Arial;fill:#64748b}
+</style><rect width="1200" height="680" rx="20" class="bg"/>
+<text x="600" y="52" text-anchor="middle" class="title">Dimension Design Principles</text>
+<text x="600" y="83" text-anchor="middle" class="sub">A practical checklist for useful, governed dimensions</text>
+<rect x="65.0" y="125" width="510" height="215" rx="16" fill="#e7f0ff" stroke="#3b82f6" stroke-width="2"/>
+<text x="89.0" y="165" class="h">Identity</text>
+<text x="90.0" y="207" class="t">• Stable surrogate key</text>
+<text x="90.0" y="238" class="t">• Retain source identifier</text>
+<text x="90.0" y="269" class="t">• Clear business definition</text>
+<rect x="625.0" y="125" width="510" height="215" rx="16" fill="#e7f7ef" stroke="#16a34a" stroke-width="2"/>
+<text x="649.0" y="165" class="h">Usability</text>
+<text x="650.0" y="207" class="t">• Business-friendly attributes</text>
+<text x="650.0" y="238" class="t">• Consistent conformed definitions</text>
+<text x="650.0" y="269" class="t">• Useful hierarchies</text>
+<rect x="65.0" y="368" width="510" height="215" rx="16" fill="#fff4d6" stroke="#d97706" stroke-width="2"/>
+<text x="89.0" y="408" class="h">History and quality</text>
+<text x="90.0" y="450" class="t">• Intentional SCD behavior</text>
+<text x="90.0" y="481" class="t">• Unknown / not-applicable members</text>
+<text x="90.0" y="512" class="t">• Document source and quality rules</text>
+<text x="600" y="635" text-anchor="middle" class="foot">Part 4.2 · E-commerce dimensional modeling</text></svg>

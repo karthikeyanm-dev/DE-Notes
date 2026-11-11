@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+<title>Four Fact Table Types</title><desc>Choose a fact type based on the business process</desc><style>
+.bg{fill:#f7f9fc} .title{font:700 30px Arial;fill:#14213a} .sub{font:17px Arial;fill:#64748b}
+.h{font:700 21px Arial;fill:#17243a} .t{font:17px Arial;fill:#334155} .foot{font:14px Arial;fill:#64748b}
+</style><rect width="1200" height="680" rx="20" class="bg"/>
+<text x="600" y="52" text-anchor="middle" class="title">Four Fact Table Types</text>
+<text x="600" y="83" text-anchor="middle" class="sub">Choose a fact type based on the business process</text>
+<rect x="65.0" y="125" width="510" height="215" rx="16" fill="#e7f0ff" stroke="#3b82f6" stroke-width="2"/>
+<text x="89.0" y="165" class="h">Transaction fact</text>
+<text x="90.0" y="207" class="t">• One row per event</text>
+<text x="90.0" y="238" class="t">• Sales line, payment attempt, return line</text>
+<rect x="625.0" y="125" width="510" height="215" rx="16" fill="#e7f7ef" stroke="#16a34a" stroke-width="2"/>
+<text x="649.0" y="165" class="h">Periodic snapshot</text>
+<text x="650.0" y="207" class="t">• One row per regular period</text>
+<text x="650.0" y="238" class="t">• Daily stock or monthly balance</text>
+<rect x="65.0" y="368" width="510" height="215" rx="16" fill="#fff4d6" stroke="#d97706" stroke-width="2"/>
+<text x="89.0" y="408" class="h">Accumulating snapshot</text>
+<text x="90.0" y="450" class="t">• One row per process instance</text>
+<text x="90.0" y="481" class="t">• Placed → Paid → Packed → Shipped → Delivered</text>
+<rect x="625.0" y="368" width="510" height="215" rx="16" fill="#f1eaff" stroke="#8b5cf6" stroke-width="2"/>
+<text x="649.0" y="408" class="h">Factless fact</text>
+<text x="650.0" y="450" class="t">• Records event or coverage</text>
+<text x="650.0" y="481" class="t">• Promotion eligibility or event attendance</text>
+<text x="650.0" y="512" class="t">• Can be counted without numeric measures</text>
+<text x="600" y="635" text-anchor="middle" class="foot">Part 4.2 · E-commerce dimensional modeling</text></svg>

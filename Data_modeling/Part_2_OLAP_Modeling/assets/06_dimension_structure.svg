@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+<title>Dimension Table Structure</title><desc>Dimension keys identify records; attributes describe them</desc><style>
+.bg{fill:#f7f9fc} .title{font:700 30px Arial;fill:#14213a} .sub{font:17px Arial;fill:#64748b}
+.h{font:700 21px Arial;fill:#17243a} .t{font:17px Arial;fill:#334155} .foot{font:14px Arial;fill:#64748b}
+</style><rect width="1200" height="680" rx="20" class="bg"/>
+<text x="600" y="52" text-anchor="middle" class="title">Dimension Table Structure</text>
+<text x="600" y="83" text-anchor="middle" class="sub">Dimension keys identify records; attributes describe them</text>
+<rect x="65.0" y="125" width="510" height="430" rx="16" fill="#e7f0ff" stroke="#3b82f6" stroke-width="2"/>
+<text x="89.0" y="165" class="h">DIM_PRODUCT</text>
+<text x="90.0" y="207" class="t">• product_key (PK) – surrogate key</text>
+<text x="90.0" y="238" class="t">• product_id – source identifier</text>
+<text x="90.0" y="269" class="t">• product_name and brand</text>
+<text x="90.0" y="300" class="t">• category and subcategory</text>
+<rect x="625.0" y="125" width="510" height="430" rx="16" fill="#e7f7ef" stroke="#16a34a" stroke-width="2"/>
+<text x="649.0" y="165" class="h">DIM_CUSTOMER</text>
+<text x="650.0" y="207" class="t">• customer_key (PK) – surrogate key</text>
+<text x="650.0" y="238" class="t">• customer_id – source identifier</text>
+<text x="650.0" y="269" class="t">• customer_name and segment</text>
+<text x="650.0" y="300" class="t">• city and region</text>
+<text x="600" y="635" text-anchor="middle" class="foot">Part 4.2 · E-commerce dimensional modeling</text></svg>
