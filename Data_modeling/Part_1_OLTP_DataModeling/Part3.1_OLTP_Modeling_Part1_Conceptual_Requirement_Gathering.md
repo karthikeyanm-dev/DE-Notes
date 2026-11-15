@@ -51,7 +51,7 @@ Therefore, understanding the OLTP model helps us understand:
 
 OLTP modeling can be approached through three layers.
 
-![Three layers of OLTP modeling](assets/01_oltp_modeling_three_layers.svg)
+![Three layers of OLTP modeling](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/01_oltp_modeling_three_layers.svg)
 
 ## 2.1 Conceptual Layer – Requirement Gathering
 
@@ -110,7 +110,7 @@ Requirement gathering is the process of collecting, clarifying, documenting and 
 
 A Data Modeler should not begin by guessing table names and columns. First, the business problem must be understood.
 
-![Requirement gathering and stakeholders](assets/02_requirement_gathering_stakeholders.svg)
+![Requirement gathering and stakeholders](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/02_requirement_gathering_stakeholders.svg)
 
 ## 3.1 Who provides the requirements?
 
@@ -169,7 +169,7 @@ A KPI (Key Performance Indicator) is a measurable value used to evaluate progres
 
 A dashboard presents selected information in a form that users can understand and monitor.
 
-![Business goal to KPI and dashboard requirement flow](assets/03_kpi_dashboard_requirement_flow.svg)
+![Business goal to KPI and dashboard requirement flow](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/03_kpi_dashboard_requirement_flow.svg)
 
 ## 4.1 Example – E-commerce company
 
@@ -220,7 +220,7 @@ The notes identify three things to collect:
 2. Characteristics.
 3. Relationships.
 
-![Subjects, characteristics and relationships](assets/04_subject_characteristic_relationship.svg)
+![Subjects, characteristics and relationships](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/04_subject_characteristic_relationship.svg)
 
 ## 5.1 Subject
 
@@ -298,7 +298,7 @@ The notes introduce a useful starting principle:
 - Characteristics commonly become columns or attributes.
 - Relationships describe how subjects are connected.
 
-![Conceptual customer and order example](assets/05_conceptual_layer_example_customer_orders.svg)
+![Conceptual customer and order example](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/05_conceptual_layer_example_customer_orders.svg)
 
 Consider this business statement:
 

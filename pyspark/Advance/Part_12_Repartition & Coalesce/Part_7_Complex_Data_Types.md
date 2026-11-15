@@ -15,7 +15,7 @@ Real-world data often arrives as nested JSON, API responses, event payloads, cli
 | `explode()` | One output row per collection element | Flatten arrays/maps |
 | `posexplode()` | Position plus element per output row | Preserve array order |
 
-![Complex data types overview](assets/complex_types_overview.svg)
+![Complex data types overview](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/complex_types_overview.svg)
 
 ## 0. Setup
 
@@ -64,7 +64,7 @@ Important properties:
 - Individual elements may be null when `containsNull=True`.
 - Arrays can be nested, including arrays of structs.
 
-![ArrayType diagram](assets/array_type.svg)
+![ArrayType diagram](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/array_type.svg)
 
 ### Create a DataFrame with ArrayType
 
@@ -337,7 +337,7 @@ nested_df.select(
 - Access nested fields with dot notation (`address.city`) or `getField()`.
 - A struct represents a fixed schema, unlike a map whose keys can vary.
 
-![StructType diagram](assets/struct_type.svg)
+![StructType diagram](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/struct_type.svg)
 
 ### Create a StructType DataFrame
 
@@ -636,7 +636,7 @@ A MapType declares:
 
 Keys are unique within a map. A map is not an ordered list; do not rely on key iteration order for business logic.
 
-![MapType diagram](assets/map_type.svg)
+![MapType diagram](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/map_type.svg)
 
 ### Create a MapType DataFrame
 
@@ -901,7 +901,7 @@ For an array:
 
 For a map, it generates one row per key-value entry, with two output columns.
 
-![explode diagram](assets/explode.svg)
+![explode diagram](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/explode.svg)
 
 ### Basic example
 
@@ -1256,7 +1256,7 @@ position | value
 
 Use it when order matters: event sequences, recommendation rankings, survey answer positions, ordered steps and order line numbers.
 
-![posexplode diagram](assets/posexplode.svg)
+![posexplode diagram](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/posexplode.svg)
 
 For a map input, `posexplode()` returns a position plus key and value, but map iteration order is not guaranteed. The position is most useful with arrays.
 
@@ -1558,7 +1558,7 @@ entries.select(
 
 # 6. Compare the types and generator functions
 
-![Array, Map and Struct comparison](assets/array_vs_map.svg)
+![Array, Map and Struct comparison](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/array_vs_map.svg)
 
 | Type/function | What it represents or returns | Use it when |
 |---|---|---|
@@ -1573,7 +1573,7 @@ entries.select(
 
 ## Null, empty and null-element differences
 
-![Null and empty array diagram](assets/null_empty.svg)
+![Null and empty array diagram](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/null_empty.svg)
 
 These four states are different:
 

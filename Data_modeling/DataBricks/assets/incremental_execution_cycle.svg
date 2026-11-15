@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="800" viewBox="0 0 1440 800" role="img" aria-labelledby="title desc">
+  <title id="title">Incremental ETL execution cycle</title>
+  <desc id="desc">Initial load takes three source records into Bronze and Silver. Later load adds three source records, Bronze is overwritten with the new three-record batch, and Silver merges them to retain six total records. A later update to an existing key is updated in Silver through MERGE.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fbff"/><stop offset="1" stop-color="#eef4fb"/></linearGradient>
+    <marker id="arr" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M1 1L10 5.5L1 10" fill="none" stroke="#60758c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect width="1440" height="800" rx="24" fill="url(#bg)"/>
+  <text x="720" y="62" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="34" font-weight="750" fill="#102a4c">HOW THE PIPELINE BEHAVES ACROSS RUNS</text>
+  <text x="720" y="98" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#526985">Bronze keeps the latest extracted batch • Silver accumulates records through MERGE</text>
+
+  <!-- Run 1 -->
+  <rect x="54" y="140" width="1332" height="190" rx="20" fill="#fff" stroke="#c9d8e8" stroke-width="2"/>
+  <rect x="54" y="140" width="150" height="190" rx="20" fill="#1d4ed8"/>
+  <path d="M184 140h20v190h-20z" fill="#1d4ed8"/>
+  <text x="129" y="215" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="800" fill="#fff">RUN 1</text>
+  <text x="129" y="246" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="15" fill="#e8f0ff">Initial load</text>
+  <g font-family="Inter,Arial,sans-serif" fill="#163452">
+    <rect x="245" y="176" width="250" height="116" rx="14" fill="#edf3ff" stroke="#bfd2f8"/>
+    <text x="370" y="208" text-anchor="middle" font-size="18" font-weight="700">SOURCE</text><text x="370" y="239" text-anchor="middle" font-size="16">1001 • 1002 • 1003</text><text x="370" y="265" text-anchor="middle" font-size="14" fill="#5c7087">3 records</text>
+    <rect x="595" y="176" width="250" height="116" rx="14" fill="#fff3e3" stroke="#f2cf9e"/>
+    <text x="720" y="208" text-anchor="middle" font-size="18" font-weight="700">BRONZE</text><text x="720" y="239" text-anchor="middle" font-size="16">1001 • 1002 • 1003</text><text x="720" y="265" text-anchor="middle" font-size="14" fill="#9a5a12">3-record batch</text>
+    <rect x="945" y="176" width="250" height="116" rx="14" fill="#e6f7f1" stroke="#b2e4d4"/>
+    <text x="1070" y="208" text-anchor="middle" font-size="18" font-weight="700">SILVER</text><text x="1070" y="239" text-anchor="middle" font-size="16">1001 • 1002 • 1003</text><text x="1070" y="265" text-anchor="middle" font-size="14" fill="#047857">3 total records</text>
+  </g>
+  <path d="M500 234H581M850 234H931" stroke="#60758c" stroke-width="3" marker-end="url(#arr)"/>
+
+  <!-- Run 2 -->
+  <rect x="54" y="356" width="1332" height="190" rx="20" fill="#fff" stroke="#c9d8e8" stroke-width="2"/>
+  <rect x="54" y="356" width="150" height="190" rx="20" fill="#b45309"/>
+  <path d="M184 356h20v190h-20z" fill="#b45309"/>
+  <text x="129" y="431" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="800" fill="#fff">RUN 2</text>
+  <text x="129" y="462" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="15" fill="#fff3e3">New records</text>
+  <g font-family="Inter,Arial,sans-serif" fill="#163452">
+    <rect x="245" y="392" width="250" height="116" rx="14" fill="#edf3ff" stroke="#bfd2f8"/>
+    <text x="370" y="424" text-anchor="middle" font-size="18" font-weight="700">SOURCE</text><text x="370" y="455" text-anchor="middle" font-size="16">1001–1006</text><text x="370" y="481" text-anchor="middle" font-size="14" fill="#5c7087">6 records total</text>
+    <rect x="595" y="392" width="250" height="116" rx="14" fill="#fff3e3" stroke="#f2cf9e"/>
+    <text x="720" y="424" text-anchor="middle" font-size="18" font-weight="700">BRONZE</text><text x="720" y="455" text-anchor="middle" font-size="16">1004 • 1005 • 1006</text><text x="720" y="481" text-anchor="middle" font-size="14" fill="#9a5a12">Replaced by new batch</text>
+    <rect x="945" y="392" width="250" height="116" rx="14" fill="#e6f7f1" stroke="#b2e4d4"/>
+    <text x="1070" y="424" text-anchor="middle" font-size="18" font-weight="700">SILVER</text><text x="1070" y="455" text-anchor="middle" font-size="16">1001–1006</text><text x="1070" y="481" text-anchor="middle" font-size="14" fill="#047857">6 total records</text>
+  </g>
+  <path d="M500 450H581M850 450H931" stroke="#60758c" stroke-width="3" marker-end="url(#arr)"/>
+
+  <!-- Run 3 -->
+  <rect x="54" y="572" width="1332" height="170" rx="20" fill="#fff" stroke="#c9d8e8" stroke-width="2"/>
+  <rect x="54" y="572" width="150" height="170" rx="20" fill="#047857"/>
+  <path d="M184 572h20v170h-20z" fill="#047857"/>
+  <text x="129" y="639" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="800" fill="#fff">RUN 3</text>
+  <text x="129" y="670" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="15" fill="#e6fff6">Update + insert</text>
+  <g font-family="Inter,Arial,sans-serif" fill="#163452">
+    <rect x="245" y="601" width="250" height="112" rx="14" fill="#edf3ff" stroke="#bfd2f8"/>
+    <text x="370" y="632" text-anchor="middle" font-size="18" font-weight="700">SOURCE</text><text x="370" y="660" text-anchor="middle" font-size="15">1002 updated + 1007</text><text x="370" y="686" text-anchor="middle" font-size="14" fill="#5c7087">Newer last_updated</text>
+    <rect x="595" y="601" width="250" height="112" rx="14" fill="#fff3e3" stroke="#f2cf9e"/>
+    <text x="720" y="632" text-anchor="middle" font-size="18" font-weight="700">BRONZE</text><text x="720" y="660" text-anchor="middle" font-size="15">1002 + 1007</text><text x="720" y="686" text-anchor="middle" font-size="14" fill="#9a5a12">2-record batch</text>
+    <rect x="945" y="601" width="250" height="112" rx="14" fill="#e6f7f1" stroke="#b2e4d4"/>
+    <text x="1070" y="632" text-anchor="middle" font-size="18" font-weight="700">SILVER</text><text x="1070" y="660" text-anchor="middle" font-size="15">1001–1007</text><text x="1070" y="686" text-anchor="middle" font-size="14" fill="#047857">Update 1002, insert 1007</text>
+  </g>
+  <path d="M500 657H581M850 657H931" stroke="#60758c" stroke-width="3" marker-end="url(#arr)"/>
+</svg>

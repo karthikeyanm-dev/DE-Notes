@@ -7,9 +7,9 @@
 
 Spark transformations are lazy. They build a plan; an action starts execution. If you run multiple actions on the same transformed DataFrame without persistence, Spark may repeat upstream work. Caching asks Spark to retain computed partitions for reuse.
 
-![Repeated actions without caching](assets/cache_without.svg)
+![Repeated actions without caching](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/cache_without.svg)
 
-![Cache and reuse](assets/cache_with.svg)
+![Cache and reuse](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/cache_with.svg)
 
 ### Common dataset for examples
 
@@ -272,7 +272,7 @@ This action causes Spark to compute the required result and populate cached part
 - Action = trigger computation.
 - Cached blocks = computed partitions retained under the storage policy.
 
-![Cache lifecycle](assets/cache_lifecycle.svg)
+![Cache lifecycle](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/cache_lifecycle.svg)
 
 ## 9. Reusing cache across actions
 
@@ -367,7 +367,7 @@ Persistence is not durable storage across application termination.
 
 A storage level describes where and how Spark stores persisted partitions: memory, disk, serialized representation (for applicable APIs), and optionally replicas.
 
-![Storage level choices](assets/storage_levels.svg)
+![Storage level choices](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/storage_levels.svg)
 
 ## 13. `MEMORY_ONLY`
 
@@ -548,7 +548,7 @@ Persistence is a performance optimization, not a promise that every cached parti
 - **Execution memory:** working memory for sorting, joins, and aggregations.
 - **Storage memory:** cached/persisted blocks and broadcast data.
 
-![Spark memory manager](assets/memory_manager.svg)
+![Spark memory manager](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/memory_manager.svg)
 
 Spark's unified memory manager allows execution and storage to share a region. They can borrow capacity subject to Spark's memory-management rules and configuration. The diagram is conceptual; do not assume a fixed percentage allocation for every cluster.
 
@@ -558,7 +558,7 @@ A large cache can compete with memory required for shuffle, sort, and aggregatio
 
 The Block Manager manages storage blocks on executors.
 
-![Block Manager](assets/block_manager.svg)
+![Block Manager](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/block_manager.svg)
 
 Conceptual sequence:
 1. A task computes a partition.

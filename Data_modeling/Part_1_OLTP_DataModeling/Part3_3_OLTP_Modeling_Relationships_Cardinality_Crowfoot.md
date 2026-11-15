@@ -105,7 +105,7 @@ Each order, however, must belong to exactly one customer under our current busin
 Order → Customer = 1..1
 ```
 
-![Cardinality match counting](assets/02_cardinality_match_counting.svg)
+![Cardinality match counting](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/02_cardinality_match_counting.svg)
 
 ## 3.1 What does zero mean?
 
@@ -147,7 +147,7 @@ It uses three basic endpoint symbols:
 - Bar = one.
 - Crow's foot = many.
 
-![Crow's Foot symbols](assets/01_crowfoot_symbols_min_max.svg)
+![Crow's Foot symbols](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/01_crowfoot_symbols_min_max.svg)
 
 ## 4.1 Circle – Zero
 
@@ -181,7 +181,7 @@ It represents the maximum cardinality of many. It is combined with a circle or b
 
 ## 4.4 The four common combinations
 
-![Minimum and maximum combinations](assets/03_min_max_combinations.svg)
+![Minimum and maximum combinations](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/03_min_max_combinations.svg)
 
 | Crow's Foot endpoint | Meaning | Minimum | Maximum |
 |---|---|---:|---:|
@@ -232,7 +232,7 @@ Assume the business rule says:
 - Every department must have exactly one manager.
 - Every manager manages exactly one department.
 
-![One-to-one Department Manager](assets/04_one_to_one_department_manager.svg)
+![One-to-one Department Manager](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/04_one_to_one_department_manager.svg)
 
 ```text
 DEPARTMENT  1 : 1  MANAGER
@@ -302,7 +302,7 @@ Example:
 ORDERS  M : N  PRODUCTS
 ```
 
-![Orders and Products many-to-many](assets/06_orders_products_many_to_many.svg)
+![Orders and Products many-to-many](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/06_orders_products_many_to_many.svg)
 
 Example data:
 
@@ -365,7 +365,7 @@ Therefore:
 Customer → Orders = zero or many
 ```
 
-![Orders Customers relationship](assets/05_orders_customers_one_to_many.svg)
+![Orders Customers relationship](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/05_orders_customers_one_to_many.svg)
 
 ## 7.3 Correct relationship classification
 
@@ -437,7 +437,7 @@ The solution is to introduce a new entity called `order_items`.
 
 It sits between Orders and Products.
 
-![Order Items associative entity](assets/07_order_items_associative_entity.svg)
+![Order Items associative entity](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/07_order_items_associative_entity.svg)
 
 ## 9.1 What is an associative entity?
 
@@ -507,7 +507,7 @@ If the business allows multiple separate lines for the same product within one o
 
 We now extend the five-entity diagram from Part 3.2 by adding relationship lines and the new `order_items` entity.
 
-![Complete e-commerce ER diagram](assets/08_ecommerce_erd_with_order_items.png)
+![Complete e-commerce ER diagram](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/08_ecommerce_erd_with_order_items.png)
 
 ## 10.1 Relationship summary
 

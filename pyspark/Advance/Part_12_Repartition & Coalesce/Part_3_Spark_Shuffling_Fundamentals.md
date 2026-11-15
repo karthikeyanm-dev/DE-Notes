@@ -44,7 +44,7 @@ To calculate a correct total for each city, Spark must ensure that all rows for 
 
 The required redistribution is the shuffle.
 
-![Why Spark needs shuffle](assets/01_why_shuffle.svg)
+![Why Spark needs shuffle](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/01_why_shuffle.svg)
 
 **Additional visual reference (click to open):** [Why shuffle is needed — image reference](https://images.openai.com/static-rsc-4/cflBszdzAJi9pUa5eoW1Lh0jWXZl7xJhq5Dqt1AGHaJ_Oap4JtPzJC4DLNYBmKz_EJLFg_p33ErwIrzL43eh12ARbcs0p-7jHe906VJuq6NJ5hTSRe7UCORINGQuHjEjEP5ng0Ibm0zbKVaT8IYoK0GRDg5yp9AOOvQJWLkNC5QxViJRXbYvQhWMY20w_nmv?purpose=fullsize)  
 **Related Medium visual walkthrough:** [What is a shuffle? — visual guide](https://medium.com/@gema.correa/what-is-a-shuffle-in-apache-spark-the-visual-guide-i-wish-i-had-at-the-beginning-2294e7f3c7b0)
@@ -118,7 +118,7 @@ At a high level, a shuffle has two main phases:
 1. **Shuffle write:** upstream tasks process input partitions and produce intermediate shuffle output.
 2. **Shuffle read:** downstream tasks fetch the blocks belonging to their target shuffle partition and continue processing.
 
-![Shuffle lifecycle](assets/02_shuffle_lifecycle.svg)
+![Shuffle lifecycle](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/02_shuffle_lifecycle.svg)
 
 **Medium diagrams for this section:** [Shuffle write/read and end-to-end lifecycle](https://medium.com/@akashchevli888/spark-shuffle-internals-how-data-moves-across-the-cluster-92f69a06b863) · [Stage 1 and Stage 2 overview](https://medium.com/@jpilli/spark-ui-essentials-3-spark-execution-concepts-4eb4d03997af)
 
@@ -198,7 +198,7 @@ The terms *map side* and *reduce side* describe the two sides of a shuffle bound
 - **Map side:** upstream tasks read their input partitions and prepare shuffle output.
 - **Reduce side:** downstream tasks fetch the relevant shuffle blocks and process the collected records.
 
-![Map side and reduce side](assets/03_map_reduce.svg)
+![Map side and reduce side](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/03_map_reduce.svg)
 
 **More visual explanation:** [Map-side processing, shuffle write, and reduce-side fetch diagrams](https://medium.com/@akashchevli888/spark-shuffle-internals-how-data-moves-across-the-cluster-92f69a06b863)
 
@@ -288,7 +288,7 @@ Spark SQL may use partial aggregation before the exchange and final aggregation 
 
 # 4. Shuffle write and shuffle read
 
-![Shuffle write and shuffle read](assets/04_shuffle_read_write.svg)
+![Shuffle write and shuffle read](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/04_shuffle_read_write.svg)
 
 **Medium image references:** [Shuffle write/read diagrams](https://medium.com/@ajithme/spark-shuffle-25ddadcbfb10) · [Shuffle read vs. write illustrations](https://medium.com/@salimovb1999/demystifying-apache-spark-shuffle-files-895eb96f854c)
 
@@ -362,7 +362,7 @@ Shuffle output is intermediate data, not the final business output of your ETL p
 
 In common sort-based shuffle implementations, Spark may create data and index files on executor-local storage. The exact file layout, naming, cleanup, and storage strategy depend on the Spark version and shuffle manager.
 
-![Conceptual shuffle file layout](assets/05_shuffle_files.svg)
+![Conceptual shuffle file layout](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/05_shuffle_files.svg)
 
 **Related Medium file-layout illustrations:** [Shuffle data and index file diagrams](https://medium.com/@salimovb1999/demystifying-apache-spark-shuffle-files-895eb96f854c) · [Detailed `.data` and `.index` walkthrough](https://medium.com/@akashchevli888/spark-shuffle-internals-how-data-moves-across-the-cluster-92f69a06b863)
 
@@ -416,7 +416,7 @@ The actual location may be managed by the cluster platform. In managed environme
 
 # 6. Why is shuffling expensive?
 
-![Shuffle cost factors](assets/06_shuffle_cost.svg)
+![Shuffle cost factors](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/06_shuffle_cost.svg)
 
 A shuffle can combine several expensive activities.
 
@@ -448,7 +448,7 @@ Large intermediate datasets can exceed available execution memory. Spill can pro
 
 A skewed key distribution can create one or a few very large shuffle partitions. The corresponding tasks run much longer than the others, producing stragglers.
 
-![Balanced and skewed shuffle partitions](assets/08_skewed_shuffle.svg)
+![Balanced and skewed shuffle partitions](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/08_skewed_shuffle.svg)
 
 **Related Medium visual reference:** [Shuffle partitioning and skew discussion](https://medium.com/@akashchevli888/spark-shuffle-internals-how-data-moves-across-the-cluster-92f69a06b863)
 
@@ -573,7 +573,7 @@ Spark must reconcile duplicate IDs that may exist in different input partitions.
 
 # 8. How to identify shuffle operations in Spark UI
 
-![Spark UI shuffle inspection](assets/07_spark_ui.svg)
+![Spark UI shuffle inspection](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/07_spark_ui.svg)
 
 **Medium Spark UI illustrations:** [Spark UI execution concepts and shuffle metrics](https://medium.com/@jpilli/spark-ui-essentials-3-spark-execution-concepts-4eb4d03997af) · [Following shuffle stages and metrics](https://medium.com/@akashchevli888/spark-shuffle-internals-how-data-moves-across-the-cluster-92f69a06b863)
 

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="760" viewBox="0 0 1440 760" role="img" aria-labelledby="title desc">
+  <title id="title">Source to Bronze to Silver ETL architecture</title>
+  <desc id="desc">Three stages: source table, transient Bronze staging table, and persistent Silver table. The Bronze notebook extracts records newer than the watermark and overwrites the batch. The Silver notebook transforms and merges records by order ID.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7fbff"/><stop offset="1" stop-color="#edf4ff"/></linearGradient>
+    <linearGradient id="source" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient>
+    <linearGradient id="bronze" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d97706"/><stop offset="1" stop-color="#b45309"/></linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f9f86"/><stop offset="1" stop-color="#047857"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#1e3a5f" flood-opacity=".13"/></filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M1 1 L10 6 L1 11" fill="none" stroke="#526985" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect width="1440" height="760" rx="28" fill="url(#bg)"/>
+  <text x="720" y="68" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="35" font-weight="750" fill="#102a4c">INCREMENTAL ETL: SOURCE → BRONZE → SILVER</text>
+  <text x="720" y="106" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="19" fill="#526985">Three notebooks • watermark-based extraction • transformation • Delta MERGE / UPSERT</text>
+
+  <g filter="url(#shadow)">
+    <rect x="55" y="160" width="365" height="375" rx="22" fill="#fff" stroke="#b9d0f5" stroke-width="2"/>
+    <rect x="55" y="160" width="365" height="82" rx="22" fill="url(#source)"/>
+    <path d="M55 220 H420 V242 H55Z" fill="url(#source)"/>
+    <rect x="537" y="160" width="365" height="375" rx="22" fill="#fff" stroke="#f3c58b" stroke-width="2"/>
+    <rect x="537" y="160" width="365" height="82" rx="22" fill="url(#bronze)"/>
+    <path d="M537 220 H902 V242 H537Z" fill="url(#bronze)"/>
+    <rect x="1019" y="160" width="365" height="375" rx="22" fill="#fff" stroke="#9bd8c7" stroke-width="2"/>
+    <rect x="1019" y="160" width="365" height="82" rx="22" fill="url(#silver)"/>
+    <path d="M1019 220 H1384 V242 H1019Z" fill="url(#silver)"/>
+  </g>
+
+  <!-- icons -->
+  <g transform="translate(88 181)" fill="none" stroke="#fff" stroke-width="4">
+    <ellipse cx="28" cy="10" rx="24" ry="8"/><path d="M4 10v40c0 5 11 9 24 9s24-4 24-9V10M4 30c0 5 11 9 24 9s24-4 24-9"/>
+  </g>
+  <g transform="translate(570 179)" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 14h48v38H6zM14 5h32v9H14zM15 25h30M15 36h22"/>
+  </g>
+  <g transform="translate(1052 179)" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M7 10h48v42H7zM17 24l8 8 15-16M17 43h28"/>
+  </g>
+  <g font-family="Inter,Arial,sans-serif" fill="#fff" font-weight="700">
+    <text x="164" y="211" font-size="28">SOURCE</text>
+    <text x="646" y="211" font-size="28">BRONZE</text>
+    <text x="1127" y="211" font-size="28">SILVER</text>
+  </g>
+  <g font-family="Inter,Arial,sans-serif" fill="#183454">
+    <text x="237" y="281" text-anchor="middle" font-size="18" font-weight="700">Source notebook</text>
+    <text x="719" y="281" text-anchor="middle" font-size="18" font-weight="700">Bronze notebook</text>
+    <text x="1201" y="281" text-anchor="middle" font-size="18" font-weight="700">Silver notebook</text>
+    <text x="83" y="326" font-size="17">• Create source table</text>
+    <text x="83" y="360" font-size="17">• Insert initial records</text>
+    <text x="83" y="394" font-size="17">• Add later source changes</text>
+    <text x="565" y="326" font-size="17">• Read MAX(last_updated)</text>
+    <text x="565" y="360" font-size="17">• Use default watermark if needed</text>
+    <text x="565" y="394" font-size="17">• Extract newer source records</text>
+    <text x="565" y="428" font-size="17">• Overwrite only when batch exists</text>
+    <text x="1047" y="326" font-size="17">• Read current Bronze batch</text>
+    <text x="1047" y="360" font-size="17">• Clean / derive columns</text>
+    <text x="1047" y="394" font-size="17">• Add process audit columns</text>
+    <text x="1047" y="428" font-size="17">• MERGE by order_id</text>
+  </g>
+  <g font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700">
+    <rect x="91" y="458" width="292" height="43" rx="12" fill="#eaf1ff"/><text x="237" y="485" text-anchor="middle" fill="#1d4ed8">datamodeling.default.source_data</text>
+    <rect x="573" y="458" width="292" height="43" rx="12" fill="#fff3e3"/><text x="719" y="485" text-anchor="middle" fill="#a34c00">datamodeling_test.default.bronze_source</text>
+    <rect x="1055" y="458" width="292" height="43" rx="12" fill="#e6f7f1"/><text x="1201" y="485" text-anchor="middle" fill="#047857">datamodeling_test.default.silver_table</text>
+  </g>
+
+  <path d="M425 345 H523" fill="none" stroke="#526985" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M907 345 H1005" fill="none" stroke="#526985" stroke-width="4" marker-end="url(#arrow)"/>
+  <g font-family="Inter,Arial,sans-serif" fill="#526985" font-size="14" font-weight="600">
+    <text x="474" y="319" text-anchor="middle">Incremental batch</text>
+    <text x="956" y="319" text-anchor="middle">Transformed batch</text>
+  </g>
+
+  <rect x="55" y="585" width="1330" height="112" rx="18" fill="#fff" stroke="#d6e2f0" stroke-width="2"/>
+  <text x="85" y="621" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="750" fill="#102a4c">DATA RETENTION STRATEGY</text>
+  <rect x="85" y="641" width="560" height="34" rx="10" fill="#fff3e3"/>
+  <text x="365" y="664" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700" fill="#a34c00">Bronze: transient batch snapshot (replace)</text>
+  <rect x="795" y="641" width="560" height="34" rx="10" fill="#e6f7f1"/>
+  <text x="1075" y="664" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700" fill="#047857">Silver: persistent accumulated table (upsert)</text>
+</svg>

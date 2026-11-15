@@ -50,7 +50,7 @@ Both datasets have 100 records and four partitions, but their execution performa
 
 ### Visual understanding
 
-![Balanced versus skewed partition distribution](assets/balanced_vs_skewed.svg)
+![Balanced versus skewed partition distribution](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/balanced_vs_skewed.svg)
 
 **Important:** Equal record counts do not necessarily mean equal processing time. Records can have different sizes and processing costs.
 
@@ -130,7 +130,7 @@ Inspect:
 partitioned_rdd.glom().collect()
 ```
 
-![Conceptual hash partitioning](assets/hash_partitioning.svg)
+![Conceptual hash partitioning](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/hash_partitioning.svg)
 
 Conceptually, a hash partitioner maps a key to a partition:
 
@@ -229,7 +229,7 @@ This situation is associated with **straggler tasks**.
 
 ### Visual explanation
 
-![Illustrative task timeline showing a straggler](assets/straggler_task_timeline.svg)
+![Illustrative task timeline showing a straggler](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/straggler_task_timeline.svg)
 
 A skewed partition can cause:
 - Longer stage execution time
@@ -622,7 +622,7 @@ salted_df = salted_df.withColumn(
 
 Now the skewed customer can be distributed across several salted keys.
 
-![Conceptual salting distribution](assets/salting_concept.svg)
+![Conceptual salting distribution](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/salting_concept.svg)
 
 **Important:** This is a simplified illustration. For skewed joins, you generally need to salt the large side and replicate or appropriately salt the matching keys on the smaller side, then remove the salt and perform any required final aggregation. Random salting also does not guarantee perfectly even distribution.
 

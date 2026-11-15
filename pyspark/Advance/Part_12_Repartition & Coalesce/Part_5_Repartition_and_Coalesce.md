@@ -128,7 +128,7 @@ It can be used to:
 - Redistribute records more evenly.
 - Partition data by one or more columns.
 
-![Repartition overview](assets/01_repartition_overview.svg)
+![Repartition overview](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/01_repartition_overview.svg)
 
 ## 4.1 DataFrame `repartition(numPartitions)`
 
@@ -238,7 +238,7 @@ df.repartition(numPartitions, "column_name")
 
 This requests hash partitioning by the specified expression(s).
 
-![Repartition by key](assets/02_repartition_by_key.svg)
+![Repartition by key](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/02_repartition_by_key.svg)
 
 ### Example
 
@@ -322,7 +322,7 @@ This is useful when downstream operations frequently use the same combination of
 
 `coalesce()` reduces the number of partitions by combining existing partition work. In its normal no-shuffle form, it avoids a full redistribution.
 
-![Coalesce narrow](assets/03_coalesce_narrow.svg)
+![Coalesce narrow](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/03_coalesce_narrow.svg)
 
 ## 5.1 DataFrame `coalesce(numPartitions)`
 
@@ -413,7 +413,7 @@ rdd.coalesce(numPartitions, shuffle=False)
 
 With `shuffle=True`, Spark redistributes records while reducing the partition count.
 
-![RDD coalesce shuffle true](assets/04_coalesce_shuffle_true.svg)
+![RDD coalesce shuffle true](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/04_coalesce_shuffle_true.svg)
 
 ## 6.1 Example
 
@@ -481,7 +481,7 @@ df.repartition(2)
 
 # 7. Increasing versus decreasing partitions
 
-![Increase versus decrease](assets/05_increase_vs_decrease.svg)
+![Increase versus decrease](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/05_increase_vs_decrease.svg)
 
 | Requirement | Typical choice | Reason |
 |---|---|---|
@@ -501,7 +501,7 @@ df.repartition(2)
 
 # 8. Performance comparison
 
-![Repartition versus coalesce](assets/06_comparison.svg)
+![Repartition versus coalesce](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/06_comparison.svg)
 
 Consider a DataFrame with 100 million records and 100 input partitions. You want 10 output partitions.
 
@@ -586,7 +586,7 @@ Spark writes output using tasks and the file writer. The number of files is infl
 - Commit protocol.
 - Whether multiple records are written to multiple directory partitions.
 
-![Output files](assets/07_output_files.svg)
+![Output files](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/07_output_files.svg)
 
 ## 10.1 Example
 
@@ -621,7 +621,7 @@ These concepts can work together, but they are not the same operation.
 
 # 11. Spark UI and physical plan analysis
 
-![Spark UI analysis](assets/08_spark_ui.svg)
+![Spark UI analysis](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/08_spark_ui.svg)
 
 ## 11.1 Inspect DataFrame physical plans
 

@@ -46,7 +46,7 @@ Imagine an e-commerce company called **XYZ Company**. It receives information fr
 
 These sources send data to a central platform, where it may be stored in MySQL, PostgreSQL, a data lake or another storage system.
 
-![Multiple data sources flowing into a central database](assets/01_data_sources_to_database.svg)
+![Multiple data sources flowing into a central database](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/01_data_sources_to_database.svg)
 
 **Key idea:** Centralizing data is only the first step. The company must also decide how the data should be structured, connected, validated and maintained. This is where data modeling becomes important.
 
@@ -72,7 +72,7 @@ Consider a customer named Gopal who places three orders.
 
 The customer's name and phone number are repeated in every order row.
 
-![Repeated customer information in one orders table](assets/02_redundancy_single_table.svg)
+![Repeated customer information in one orders table](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/02_redundancy_single_table.svg)
 
 ### Why can this become a problem?
 
@@ -99,7 +99,7 @@ We can separate customer details from order details.
 | 102 | C01 | TV |
 | 103 | C01 | TWS |
 
-![Customer and Orders tables separated with a key relationship](assets/03_normalized_customer_orders.svg)
+![Customer and Orders tables separated with a key relationship](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/03_normalized_customer_orders.svg)
 
 Now customer details are stored once in the Customers table. The Orders table references the customer using `customer_id`.
 
@@ -236,7 +236,7 @@ The notes introduce three modeling levels:
 2. Logical model – data structure and relationships.
 3. Physical model – database-specific implementation.
 
-![Conceptual, logical and physical data modeling levels](assets/04_three_data_modeling_levels.svg)
+![Conceptual, logical and physical data modeling levels](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/04_three_data_modeling_levels.svg)
 
 These levels describe increasing detail, moving from business understanding toward implementation.
 
@@ -315,7 +315,7 @@ Now we know that the business has Customers and Orders. We identify the informat
 
 ### Logical ER diagram
 
-![Logical ER diagram showing Customer and Orders entities](assets/05_logical_er_diagram.svg)
+![Logical ER diagram showing Customer and Orders entities](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/05_logical_er_diagram.svg)
 
 The diagram identifies:
 
@@ -456,7 +456,7 @@ The notes and syllabus also mention Internal, Conceptual and External Schemas.
 
 These terms belong to the traditional **ANSI/SPARC three-schema architecture**. It is important not to confuse these with the three data modeling levels discussed above.
 
-![ANSI SPARC external conceptual internal schema architecture](assets/06_ansi_sparc_three_schema.svg)
+![ANSI SPARC external conceptual internal schema architecture](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/06_ansi_sparc_three_schema.svg)
 
 ## 5.1 External Schema
 

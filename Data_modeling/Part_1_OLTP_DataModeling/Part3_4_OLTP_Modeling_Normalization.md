@@ -178,7 +178,7 @@ Now each cell contains one value and each product line is represented as a separ
 
 The following image is referenced by filename. Keep `1NF.png` in the same directory as this Markdown file for the link to resolve.
 
-![1NF – From Lists to Atomic Values](assets\1NF.png)
+![1NF – From Lists to Atomic Values](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/1NF.png)
 
 ---
 
@@ -251,7 +251,7 @@ If the same product can appear on multiple separate lines in one order, use a li
 
 Keep `2NF.png` in the same directory as this Markdown file.
 
-![2NF – Removing Partial Dependencies](assets\2NF.png)
+![2NF – Removing Partial Dependencies](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/2NF.png)
 
 ---
 
@@ -354,7 +354,7 @@ Now category details are maintained independently.
 
 Keep `3NF.png` in the same directory as this Markdown file.
 
-![3NF – Removing Transitive Dependencies](assets/3NF.png)
+![3NF – Removing Transitive Dependencies](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/3NF.png)
 
 ---
 
@@ -440,7 +440,7 @@ This decomposition is lossless under the stated dependency. The example illustra
 
 Keep `BCNF.png` in the same directory as this Markdown file.
 
-![BCNF – Every Determinant Is a Superkey](assets/BCNF.png)
+![BCNF – Every Determinant Is a Superkey](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/BCNF.png)
 
 ---
 
@@ -467,7 +467,7 @@ Every BCNF relation is in 3NF, every 3NF relation is in 2NF, and every 2NF relat
 
 The following is the final logical schema represented in our e-commerce ER diagram after separating customer, product, branch and transaction-line information into their own entities.
 
-![Normalized E-commerce ER Diagram](assets/normalized_ecommerce_erd.png)
+![Normalized E-commerce ER Diagram](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/normalized_ecommerce_erd.png)
 
 ## 9.1 Entity inventory
 

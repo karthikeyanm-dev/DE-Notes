@@ -33,7 +33,7 @@ Each partition becomes an independent unit of task execution for a stage.
 
 ### Visual understanding
 
-![Spark partitions divided into four chunks](assets/glom_partition_visualization.svg)
+![Spark partitions divided into four chunks](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/glom_partition_visualization.svg)
 
 **Important:** Partitions are logical data divisions. They are not necessarily separate physical files, machines or executors.
 
@@ -48,7 +48,7 @@ Spark uses a distributed execution model:
 5. Multiple tasks can execute simultaneously on available task slots.
 6. Results are returned or written to the required destination.
 
-![Spark driver, executors, tasks and partitions](assets/spark_partition_execution.svg)
+![Spark driver, executors, tasks and partitions](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/spark_partition_execution.svg)
 
 **Key relationship: `1 partition = 1 task per stage`**
 
@@ -264,7 +264,7 @@ rdd = sc.textFile("sales.csv", minPartitions=8)
 
 **Important:** `minPartitions` is a hint, not an exact guarantee that Spark will create exactly eight partitions. Actual partitioning depends on the file format, input splits and implementation.
 
-![Illustration of file input splits](assets/file_input_splits.svg)
+![Illustration of file input splits](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/file_input_splits.svg)
 
 For example, assuming 128 MB input splits:
 
@@ -394,7 +394,7 @@ In simple words:
 
 ### Visual understanding
 
-![Before and after glom](assets/glom_partition_visualization.svg)
+![Before and after glom](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/glom_partition_visualization.svg)
 
 Suppose we have this RDD:
 
@@ -549,7 +549,7 @@ Output:
 
 The following conceptual diagram shows a Driver scheduling work across executors. Each task processes its assigned partition.
 
-![Spark partition execution architecture](assets/spark_partition_execution.svg)
+![Spark partition execution architecture](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/spark_partition_execution.svg)
 
 Actual executor and task placement is controlled by Spark's scheduler. The number of tasks that run simultaneously depends on available task slots.
 

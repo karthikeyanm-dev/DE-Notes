@@ -43,7 +43,7 @@ At the same time, management wants to understand:
 
 These are two different categories of workloads.
 
-![OLTP vs OLAP overview](assets/01_oltp_vs_olap_overview.svg)
+![OLTP vs OLAP overview](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/01_oltp_vs_olap_overview.svg)
 
 - **OLTP** supports the daily operations of the business.
 - **OLAP** supports analysis of business performance and trends.
@@ -76,7 +76,7 @@ When a customer places an order, the application may need to:
 5. Update inventory.
 6. Return an order confirmation.
 
-![OLTP order placement transaction flow](assets/02_oltp_order_transaction_flow.svg)
+![OLTP order placement transaction flow](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/02_oltp_order_transaction_flow.svg)
 
 A database transaction should protect the database changes it controls. For example, if an order and its order items are written together, the transaction should not leave only half of those database changes committed.
 
@@ -215,7 +215,7 @@ The system may need to:
 4. Compare results across months.
 5. Return a summarized report.
 
-![OLAP analytical data flow](assets/03_olap_analytics_flow.svg)
+![OLAP analytical data flow](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/03_olap_analytics_flow.svg)
 
 ### Typical OLAP characteristics
 
@@ -364,7 +364,7 @@ The fact table stores measurable business events, while dimension tables provide
 
 A common architecture keeps operational workloads separate from analytical workloads.
 
-![Typical OLTP and OLAP architecture](assets/04_oltp_olap_architecture.svg)
+![Typical OLTP and OLAP architecture](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/04_oltp_olap_architecture.svg)
 
 ### Step 1 – OLTP source
 

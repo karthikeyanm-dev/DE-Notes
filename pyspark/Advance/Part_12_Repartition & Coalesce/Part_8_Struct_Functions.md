@@ -13,7 +13,7 @@ In the previous chapter, we learned `ArrayType`, `StructType`, `MapType`, `explo
 | `arrays_zip()` | Combines arrays position by position into an array of structs |
 | Nested columns | Access, select, transform, rename and rebuild nested fields |
 
-![Struct function overview](assets/struct_function.svg)
+![Struct function overview](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/struct_function.svg)
 
 ## Setup
 
@@ -72,7 +72,7 @@ After creating a `profile` struct:
 
 The nested fields can be accessed using dot notation such as `profile.name`.
 
-![struct function diagram](assets/struct_function.svg)
+![struct function diagram](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/struct_function.svg)
 
 ### Syntax
 
@@ -445,7 +445,7 @@ arrays_zip(subjects, marks)
        {subjects: "Science", marks: 85}]
 ```
 
-![arrays_zip diagram](assets/arrays_zip.svg)
+![arrays_zip diagram](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/arrays_zip.svg)
 
 ### Syntax and behavior
 
@@ -518,7 +518,7 @@ df.select(
 +--------------------------------------+
 ```
 
-![Unequal arrays diagram](assets/zip_unequal_arrays.svg)
+![Unequal arrays diagram](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/zip_unequal_arrays.svg)
 
 ### Example 3 — Zip three arrays
 
@@ -838,7 +838,7 @@ order
       └── array of item structs
 ```
 
-![Nested columns diagram](assets/nested_columns.svg)
+![Nested columns diagram](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/nested_columns.svg)
 
 Nested data is common in JSON, REST APIs, event streams and data lake ingestion.
 
@@ -1204,7 +1204,7 @@ arrays_zip(skus, quantities)
 
 ## Array of structs vs struct containing arrays
 
-![Array of structs vs struct of arrays](assets/nested_array_struct.svg)
+![Array of structs vs struct of arrays](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/nested_array_struct.svg)
 
 **Array of structs:** each element is one complete record.
 
@@ -1228,7 +1228,7 @@ The second structure is a typical use case for `arrays_zip()`: align parallel ar
 
 ## Unequal arrays
 
-![Unequal arrays](assets/zip_unequal_arrays.svg)
+![Unequal arrays](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/zip_unequal_arrays.svg)
 
 If arrays have different lengths, `arrays_zip()` pads missing positions in shorter arrays with null. It does not truncate to the shortest array. Validate lengths if mismatches indicate a source data-quality issue.
 

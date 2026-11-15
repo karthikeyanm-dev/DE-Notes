@@ -91,7 +91,7 @@ A narrow transformation allows Spark to compute a child partition using data fro
 
 For common partition-preserving operations such as `map()` and `filter()`, the relationship is usually one parent partition to the corresponding child partition.
 
-![Narrow dependency](assets/01_narrow_dependency.svg)
+![Narrow dependency](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/01_narrow_dependency.svg)
 
 ## 4.1 Main characteristics
 
@@ -236,7 +236,7 @@ This is a preview of the next chapter's detailed `repartition()` and `coalesce()
 
 A wide transformation creates a dependency where child partitions need data from multiple parent partitions. Spark commonly has to redistribute data so records are assigned to the appropriate destination partitions.
 
-![Wide dependency](assets/02_wide_dependency.svg)
+![Wide dependency](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/02_wide_dependency.svg)
 
 ## 5.1 Main characteristics
 
@@ -403,7 +403,7 @@ partition_sorted = orders_df.sortWithinPartitions("amount")
 
 # 6. Narrow versus wide — the central comparison
 
-![Narrow versus wide](assets/03_narrow_vs_wide.svg)
+![Narrow versus wide](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/03_narrow_vs_wide.svg)
 
 | Feature | Narrow dependency | Wide dependency |
 |---|---|---|
@@ -436,7 +436,7 @@ A **stage** is a group of tasks that can execute without crossing a shuffle depe
 
 Spark can pipeline narrow transformations together. A shuffle dependency normally divides the work into an upstream stage that writes shuffle output and a downstream stage that reads it.
 
-![Stage boundary](assets/04_stage_boundaries.svg)
+![Stage boundary](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/04_stage_boundaries.svg)
 
 Example:
 
@@ -480,7 +480,7 @@ Not necessarily. A query can have multiple exchanges, multiple stages, reused ex
 
 RDD lineage is the record of how an RDD was derived from earlier RDDs. It allows Spark to recompute lost partitions from the transformations that created them, where the source data and lineage remain available.
 
-![RDD lineage](assets/05_rdd_lineage.svg)
+![RDD lineage](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/05_rdd_lineage.svg)
 
 Example:
 
@@ -503,7 +503,7 @@ print(filtered.toDebugString())
 
 A DAG may contain several stages. A stage generally contains multiple tasks, often one task per partition for that stage.
 
-![DAG example](assets/08_dag_stage_example.svg)
+![DAG example](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/08_dag_stage_example.svg)
 
 ---
 
@@ -534,7 +534,7 @@ HashAggregate
 
 This is an illustrative plan shape. The exact operator order, partition count, and presence of partial aggregation vary.
 
-![DataFrame Exchange plan](assets/06_dataframe_exchange.svg)
+![DataFrame Exchange plan](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/06_dataframe_exchange.svg)
 
 ## 9.1 What does `Exchange` mean?
 
@@ -571,7 +571,7 @@ Run an action to trigger execution:
 summary.show()
 ```
 
-![Spark UI inspection](assets/09_spark_ui_inspection.svg)
+![Spark UI inspection](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/09_spark_ui_inspection.svg)
 
 In the Spark UI:
 
@@ -594,7 +594,7 @@ In the Spark UI:
 | One task much slower than others | Possible skew or uneven work |
 | Large spill | Memory pressure during execution |
 
-![Spark UI inspection](assets/09_spark_ui_inspection.svg)
+![Spark UI inspection](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/pyspark/Advance/Part_12_Repartition%20%26%20Coalesce/assets/09_spark_ui_inspection.svg)
 
 ---
 

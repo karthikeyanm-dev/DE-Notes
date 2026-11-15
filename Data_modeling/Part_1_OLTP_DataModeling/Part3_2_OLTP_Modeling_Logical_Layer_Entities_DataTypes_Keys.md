@@ -83,7 +83,7 @@ In a relational table, an attribute is represented by a column.
 
 The initial ER draft contains five entities. We will use those five as the scope for this chapter.
 
-![E-commerce entities without relationships](assets/01_entities_without_relationships.svg)
+![E-commerce entities without relationships](https://raw.githubusercontent.com/karthikeyanm-dev/DE-Notes/main/Data_modeling/Part_1_OLTP_DataModeling/assets/01_entities_without_relationships.svg)
 
 ## 2.1 Customer
 
